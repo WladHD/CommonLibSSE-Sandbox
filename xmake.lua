@@ -53,13 +53,11 @@ target("do-be-like")
 
         local compilePapyrus = function(output)
             local papyrusCompilerPath = os.getenv("SKYRIM_FOLDER") .. "\\Papyrus Compiler\\PapyrusCompiler.exe"
-            local papyrusCompileItems = os.match("res\\Data\\Scripts\\Source\\*.psc")
+            local papyrusCompileItems = os.match("res\\Scripts\\Source\\*.psc")
             local compilersImportScriptDirs = os.getenv("SKYRIM_FOLDER") .. "\\Data\\Scripts"
             local compilersImportScriptSourceDirs = compilersImportScriptDirs .. "\\Source"
             local papyrusFlagsFile = compilersImportScriptSourceDirs .. "\\TESV_Papyrus_Flags.flg"
             local compilersImportDirs = compilersImportScriptDirs .. ";" .. compilersImportScriptSourceDirs
-            print("sdf")
-            print(papyrusCompilerPath)
 
             for _, file in ipairs(papyrusCompileItems) do
                 local pscFile = path.absolute(file)
@@ -70,11 +68,14 @@ target("do-be-like")
                 -- print(pexFile)
 
                 os.cp(pscFile, pscFileMoveTo, {force = true})
+
+                print("Compiling " .. path.filename(file))
                 
                 local execCompileCommand = "\"" .. papyrusCompilerPath .. "\" \"" .. pscFileMoveTo .. "\" -o=\"" .. output .. "\" -i=\"" .. compilersImportDirs .. "\" -f=\"" .. papyrusFlagsFile .. "\" -debug"
                 
-                print(execCompileCommand)
+                -- print(execCompileCommand)
                 os.iorun(execCompileCommand)
+                print("Compiled")
             end
 
             for _, file in ipairs(papyrusCompileItems) do
@@ -82,10 +83,9 @@ target("do-be-like")
                 local pscFileMoveTo = compilersImportScriptSourceDirs .. "\\" .. path.filename(file)
                 os.rm(pscFileMoveTo)
             end
-            print("sdf finish")
         end
 
-        compilePapyrus("D:\\Freizeit\\Skyrim Coding\\Project HorseRNG\\template-commonlibsse-ng\\res\\Data\\Scripts")
+        compilePapyrus("D:\\Freizeit\\Skyrim Coding\\Project HorseRNG\\CommonLibSSE-Sandbox\\res\\Scripts")
 
         local copy = function(env, ext)
             for _, env in pairs(env:split(";")) do
@@ -101,6 +101,7 @@ target("do-be-like")
             os.rm(path.join(os.getenv("SKYRIM_MODS_FOLDER"), target:name()))
             copy(os.getenv("SKYRIM_MODS_FOLDER"), target:name())
             os.trycp("res\\*", path.join(os.getenv("SKYRIM_MODS_FOLDER"), target:name()))
+            os.trycp("res\\Scripts\\Source\\", path.join(os.getenv("SKYRIM_MODS_FOLDER"), target:name(), "Source", "Scripts"))
         elseif os.getenv("SKYRIM_FOLDER") then
             copy(os.getenv("SKYRIM_FOLDER"), "Data")
         end

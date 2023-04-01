@@ -1,0 +1,139 @@
+digraph {
+ ordering=out;
+ ranksep=.4
+ rankdir=LR
+ bgcolor="lightgrey";
+ node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+       width=.25, height=.25, color="black", style="bold"]
+ n0 [label="object"];
+ n1 [label="DoBeLikeScript2"];
+ n1 [label="DoBeLikeScript2"];
+ n2 [label="0"];
+ n3 [label="Quest"];
+ n4 [label="function"];
+ n4 [label="function"];
+ n5 [label="header"];
+ n5 [label="header"];
+ n6 [label="string"];
+ n7 [label="DBLSandboxMyNativeFunction"];
+ n8 [label="0"];
+ n9 [label="global"];
+ n10 [label="native"];
+ n11 [label="event"];
+ n11 [label="event"];
+ n12 [label="header"];
+ n12 [label="header"];
+ n13 [label="NONE"];
+ n14 [label="OnInit"];
+ n15 [label="0"];
+ n16 [label="BLOCK"];
+ n16 [label="BLOCK"];
+ n17 [label="."];
+ n17 [label="."];
+ n18 [label="Debug"];
+ n19 [label="call"];
+ n19 [label="call"];
+ n20 [label="MessageBox"];
+ n21 [label="callparams"];
+ n21 [label="callparams"];
+ n22 [label="PARAM"];
+ n22 [label="PARAM"];
+ n23 [label=""];
+ n24 [label="+"];
+ n24 [label="+"];
+ n25 [label="+"];
+ n25 [label="+"];
+ n26 [label="\"We do be \""];
+ n27 [label="call"];
+ n27 [label="call"];
+ n28 [label="DBLSandboxMyNativeFunction"];
+ n29 [label="callparams"];
+ n30 [label="\" very hard\""];
+ n31 [label="."];
+ n31 [label="."];
+ n32 [label="Debug"];
+ n33 [label="call"];
+ n33 [label="call"];
+ n34 [label="Trace"];
+ n35 [label="callparams"];
+ n35 [label="callparams"];
+ n36 [label="PARAM"];
+ n36 [label="PARAM"];
+ n37 [label=""];
+ n38 [label="+"];
+ n38 [label="+"];
+ n39 [label="\"a_stringToPrint\""];
+ n40 [label="call"];
+ n40 [label="call"];
+ n41 [label="DBLSandboxMyNativeFunction"];
+ n42 [label="callparams"];
+ n43 [label="."];
+ n43 [label="."];
+ n44 [label="Debug"];
+ n45 [label="call"];
+ n45 [label="call"];
+ n46 [label="Trace"];
+ n47 [label="callparams"];
+ n47 [label="callparams"];
+ n48 [label="PARAM"];
+ n48 [label="PARAM"];
+ n49 [label=""];
+ n50 [label="call"];
+ n50 [label="call"];
+ n51 [label="DBLSandboxMyNativeFunction"];
+ n52 [label="callparams"];
+
+ n0 -> n1 // "object" -> "DoBeLikeScript2"
+ n1 -> n2 // "DoBeLikeScript2" -> "0"
+ n1 -> n3 // "DoBeLikeScript2" -> "Quest"
+ n0 -> n4 // "object" -> "function"
+ n4 -> n5 // "function" -> "header"
+ n5 -> n6 // "header" -> "string"
+ n5 -> n7 // "header" -> "DBLSandboxMyNativeFunction"
+ n5 -> n8 // "header" -> "0"
+ n5 -> n9 // "header" -> "global"
+ n5 -> n10 // "header" -> "native"
+ n0 -> n11 // "object" -> "event"
+ n11 -> n12 // "event" -> "header"
+ n12 -> n13 // "header" -> "NONE"
+ n12 -> n14 // "header" -> "OnInit"
+ n12 -> n15 // "header" -> "0"
+ n11 -> n16 // "event" -> "BLOCK"
+ n16 -> n17 // "BLOCK" -> "."
+ n17 -> n18 // "." -> "Debug"
+ n17 -> n19 // "." -> "call"
+ n19 -> n20 // "call" -> "MessageBox"
+ n19 -> n21 // "call" -> "callparams"
+ n21 -> n22 // "callparams" -> "PARAM"
+ n22 -> n23 // "PARAM" -> ""
+ n22 -> n24 // "PARAM" -> "+"
+ n24 -> n25 // "+" -> "+"
+ n25 -> n26 // "+" -> ""We do be ""
+ n25 -> n27 // "+" -> "call"
+ n27 -> n28 // "call" -> "DBLSandboxMyNativeFunction"
+ n27 -> n29 // "call" -> "callparams"
+ n24 -> n30 // "+" -> "" very hard""
+ n16 -> n31 // "BLOCK" -> "."
+ n31 -> n32 // "." -> "Debug"
+ n31 -> n33 // "." -> "call"
+ n33 -> n34 // "call" -> "Trace"
+ n33 -> n35 // "call" -> "callparams"
+ n35 -> n36 // "callparams" -> "PARAM"
+ n36 -> n37 // "PARAM" -> ""
+ n36 -> n38 // "PARAM" -> "+"
+ n38 -> n39 // "+" -> ""a_stringToPrint""
+ n38 -> n40 // "+" -> "call"
+ n40 -> n41 // "call" -> "DBLSandboxMyNativeFunction"
+ n40 -> n42 // "call" -> "callparams"
+ n16 -> n43 // "BLOCK" -> "."
+ n43 -> n44 // "." -> "Debug"
+ n43 -> n45 // "." -> "call"
+ n45 -> n46 // "call" -> "Trace"
+ n45 -> n47 // "call" -> "callparams"
+ n47 -> n48 // "callparams" -> "PARAM"
+ n48 -> n49 // "PARAM" -> ""
+ n48 -> n50 // "PARAM" -> "call"
+ n50 -> n51 // "call" -> "DBLSandboxMyNativeFunction"
+ n50 -> n52 // "call" -> "callparams"
+
+}

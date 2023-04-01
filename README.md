@@ -1,5 +1,11 @@
 # Goals of this branch
 - Binding the "DoBeLikeScript.psc" to a quest (?) with C++
+	- No fully dynamic binding yet
+	- Binding is set by Creation Kit (new Quest -> adding existing Script)
+	- DBLSandboxMyNativeFunction() is set in C++, works
+
+ToDo:
+- Create Quest dynamically and bind "DoBeLikeScript.psc" to that
 
 # Plugin skeleton for CommonLibSSE-NG
 - Generates a .dll file from C++

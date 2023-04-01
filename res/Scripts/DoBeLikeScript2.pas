@@ -1,7 +1,7 @@
 .info
-  .source "DoBeLikeScript.psc"
-  .modifyTime 1680364040
-  .compileTime 1680365277
+  .source "DoBeLikeScript2.psc"
+  .modifyTime 1680374231
+  .compileTime 1680374285
   .user "Arbeitsplatz"
   .computer "DESKTOP-FB32QHR"
 .endInfo
@@ -10,7 +10,7 @@
   .flag hidden 0
 .endUserFlagsRef
 .objectTable
-  .object DoBeLikeScript Quest
+  .object DoBeLikeScript2 Quest
     .userFlags 0
     .docString ""
     .autoState 
@@ -48,6 +48,13 @@
             CALLMETHOD onBeginState self ::NoneVar
           .endCode
         .endFunction
+        .function DBLSandboxMyNativeFunction native static
+          .userFlags 0
+          .docString ""
+          .return string
+          .paramTable
+          .endParamTable
+        .endFunction
         .function OnInit 
           .userFlags 0
           .docString ""
@@ -55,10 +62,19 @@
           .paramTable
           .endParamTable
           .localTable
+            .local ::temp0 string
             .local ::nonevar none
           .endLocalTable
           .code
-            CALLSTATIC debug MessageBox ::nonevar "Hello, mod!" ;@line 4
+            CALLSTATIC dobelikescript2 DBLSandboxMyNativeFunction ::temp0  ;@line 6
+            STRCAT ::temp0 "We do be " ::temp0 ;@line 6
+            STRCAT ::temp0 ::temp0 " very hard" ;@line 6
+            CALLSTATIC debug MessageBox ::nonevar ::temp0 ;@line 6
+            CALLSTATIC dobelikescript2 DBLSandboxMyNativeFunction ::temp0  ;@line 7
+            STRCAT ::temp0 "a_stringToPrint" ::temp0 ;@line 7
+            CALLSTATIC debug Trace ::nonevar ::temp0 0 ;@line 7
+            CALLSTATIC dobelikescript2 DBLSandboxMyNativeFunction ::temp0  ;@line 8
+            CALLSTATIC debug Trace ::nonevar ::temp0 0 ;@line 8
           .endCode
         .endFunction
       .endState
