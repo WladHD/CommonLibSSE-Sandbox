@@ -1,3 +1,6 @@
+# Goals of this branch
+- Binding the "DoBeLikeScript.psc" to a quest (?) with C++
+
 # Plugin skeleton for CommonLibSSE-NG
 - Generates a .dll file from C++
 - Compiles all Papyrus code from PSC to PEX
