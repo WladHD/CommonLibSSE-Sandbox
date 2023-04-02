@@ -28,60 +28,151 @@ digraph {
  n15 [label="0"];
  n16 [label="BLOCK"];
  n16 [label="BLOCK"];
- n17 [label="."];
- n17 [label="."];
- n18 [label="Debug"];
- n19 [label="call"];
- n19 [label="call"];
- n20 [label="MessageBox"];
- n21 [label="callparams"];
- n21 [label="callparams"];
- n22 [label="PARAM"];
- n22 [label="PARAM"];
- n23 [label=""];
- n24 [label="+"];
- n24 [label="+"];
- n25 [label="+"];
- n25 [label="+"];
- n26 [label="\"We do be \""];
- n27 [label="call"];
- n27 [label="call"];
- n28 [label="DBLSandboxMyNativeFunction"];
- n29 [label="callparams"];
- n30 [label="\" very hard\""];
- n31 [label="."];
- n31 [label="."];
- n32 [label="Debug"];
+ n17 [label="call"];
+ n17 [label="call"];
+ n18 [label="RegisterForKey"];
+ n19 [label="callparams"];
+ n19 [label="callparams"];
+ n20 [label="PARAM"];
+ n20 [label="PARAM"];
+ n21 [label=""];
+ n22 [label="200"];
+ n23 [label="."];
+ n23 [label="."];
+ n24 [label="Debug"];
+ n25 [label="call"];
+ n25 [label="call"];
+ n26 [label="MessageBox"];
+ n27 [label="callparams"];
+ n27 [label="callparams"];
+ n28 [label="PARAM"];
+ n28 [label="PARAM"];
+ n29 [label=""];
+ n30 [label="+"];
+ n30 [label="+"];
+ n31 [label="+"];
+ n31 [label="+"];
+ n32 [label="\"We papydo be \""];
  n33 [label="call"];
  n33 [label="call"];
- n34 [label="Trace"];
+ n34 [label="DBLSandboxMyNativeFunction"];
  n35 [label="callparams"];
- n35 [label="callparams"];
- n36 [label="PARAM"];
- n36 [label="PARAM"];
- n37 [label=""];
- n38 [label="+"];
- n38 [label="+"];
- n39 [label="\"a_stringToPrint\""];
+ n36 [label="\" very hard indeed\""];
+ n37 [label="."];
+ n37 [label="."];
+ n38 [label="."];
+ n38 [label="."];
+ n39 [label="Game"];
  n40 [label="call"];
  n40 [label="call"];
- n41 [label="DBLSandboxMyNativeFunction"];
+ n41 [label="GetPlayer"];
  n42 [label="callparams"];
- n43 [label="."];
- n43 [label="."];
- n44 [label="Debug"];
- n45 [label="call"];
- n45 [label="call"];
- n46 [label="Trace"];
- n47 [label="callparams"];
- n47 [label="callparams"];
- n48 [label="PARAM"];
- n48 [label="PARAM"];
- n49 [label=""];
- n50 [label="call"];
- n50 [label="call"];
- n51 [label="DBLSandboxMyNativeFunction"];
- n52 [label="callparams"];
+ n43 [label="call"];
+ n43 [label="call"];
+ n44 [label="OpenInventory"];
+ n45 [label="callparams"];
+ n46 [label="."];
+ n46 [label="."];
+ n47 [label="Debug"];
+ n48 [label="call"];
+ n48 [label="call"];
+ n49 [label="Trace"];
+ n50 [label="callparams"];
+ n50 [label="callparams"];
+ n51 [label="PARAM"];
+ n51 [label="PARAM"];
+ n52 [label=""];
+ n53 [label="+"];
+ n53 [label="+"];
+ n54 [label="\"a_stringToPrint\""];
+ n55 [label="call"];
+ n55 [label="call"];
+ n56 [label="DBLSandboxMyNativeFunction"];
+ n57 [label="callparams"];
+ n58 [label="."];
+ n58 [label="."];
+ n59 [label="Debug"];
+ n60 [label="call"];
+ n60 [label="call"];
+ n61 [label="Trace"];
+ n62 [label="callparams"];
+ n62 [label="callparams"];
+ n63 [label="PARAM"];
+ n63 [label="PARAM"];
+ n64 [label=""];
+ n65 [label="call"];
+ n65 [label="call"];
+ n66 [label="DBLSandboxMyNativeFunction"];
+ n67 [label="callparams"];
+ n68 [label="event"];
+ n68 [label="event"];
+ n69 [label="header"];
+ n69 [label="header"];
+ n70 [label="NONE"];
+ n71 [label="OnKeyDown"];
+ n72 [label="0"];
+ n73 [label="parameter"];
+ n73 [label="parameter"];
+ n74 [label="Int"];
+ n75 [label="KeyCode"];
+ n76 [label="BLOCK"];
+ n76 [label="BLOCK"];
+ n77 [label="."];
+ n77 [label="."];
+ n78 [label="Debug"];
+ n79 [label="call"];
+ n79 [label="call"];
+ n80 [label="MessageBox"];
+ n81 [label="callparams"];
+ n81 [label="callparams"];
+ n82 [label="PARAM"];
+ n82 [label="PARAM"];
+ n83 [label=""];
+ n84 [label="\"Inv open?\""];
+ n85 [label="If"];
+ n85 [label="If"];
+ n86 [label="=="];
+ n86 [label="=="];
+ n87 [label="KeyCode"];
+ n88 [label="200"];
+ n89 [label="BLOCK"];
+ n89 [label="BLOCK"];
+ n90 [label="."];
+ n90 [label="."];
+ n91 [label="."];
+ n91 [label="."];
+ n92 [label="Game"];
+ n93 [label="call"];
+ n93 [label="call"];
+ n94 [label="GetPlayer"];
+ n95 [label="callparams"];
+ n96 [label="call"];
+ n96 [label="call"];
+ n97 [label="OpenInventory"];
+ n98 [label="callparams"];
+ n98 [label="callparams"];
+ n99 [label="PARAM"];
+ n99 [label="PARAM"];
+ n100 [label=""];
+ n101 [label="true"];
+ n102 [label="."];
+ n102 [label="."];
+ n103 [label="Debug"];
+ n104 [label="call"];
+ n104 [label="call"];
+ n105 [label="MessageBox"];
+ n106 [label="callparams"];
+ n106 [label="callparams"];
+ n107 [label="PARAM"];
+ n107 [label="PARAM"];
+ n108 [label=""];
+ n109 [label="+"];
+ n109 [label="+"];
+ n110 [label="\"We are \""];
+ n111 [label="call"];
+ n111 [label="call"];
+ n112 [label="DBLSandboxMyNativeFunction"];
+ n113 [label="callparams"];
 
  n0 -> n1 // "object" -> "DoBeLikeScript2"
  n1 -> n2 // "DoBeLikeScript2" -> "0"
@@ -99,41 +190,102 @@ digraph {
  n12 -> n14 // "header" -> "OnInit"
  n12 -> n15 // "header" -> "0"
  n11 -> n16 // "event" -> "BLOCK"
- n16 -> n17 // "BLOCK" -> "."
- n17 -> n18 // "." -> "Debug"
- n17 -> n19 // "." -> "call"
- n19 -> n20 // "call" -> "MessageBox"
- n19 -> n21 // "call" -> "callparams"
- n21 -> n22 // "callparams" -> "PARAM"
- n22 -> n23 // "PARAM" -> ""
- n22 -> n24 // "PARAM" -> "+"
- n24 -> n25 // "+" -> "+"
- n25 -> n26 // "+" -> ""We do be ""
- n25 -> n27 // "+" -> "call"
- n27 -> n28 // "call" -> "DBLSandboxMyNativeFunction"
- n27 -> n29 // "call" -> "callparams"
- n24 -> n30 // "+" -> "" very hard""
- n16 -> n31 // "BLOCK" -> "."
- n31 -> n32 // "." -> "Debug"
- n31 -> n33 // "." -> "call"
- n33 -> n34 // "call" -> "Trace"
+ n16 -> n17 // "BLOCK" -> "call"
+ n17 -> n18 // "call" -> "RegisterForKey"
+ n17 -> n19 // "call" -> "callparams"
+ n19 -> n20 // "callparams" -> "PARAM"
+ n20 -> n21 // "PARAM" -> ""
+ n20 -> n22 // "PARAM" -> "200"
+ n16 -> n23 // "BLOCK" -> "."
+ n23 -> n24 // "." -> "Debug"
+ n23 -> n25 // "." -> "call"
+ n25 -> n26 // "call" -> "MessageBox"
+ n25 -> n27 // "call" -> "callparams"
+ n27 -> n28 // "callparams" -> "PARAM"
+ n28 -> n29 // "PARAM" -> ""
+ n28 -> n30 // "PARAM" -> "+"
+ n30 -> n31 // "+" -> "+"
+ n31 -> n32 // "+" -> ""We papydo be ""
+ n31 -> n33 // "+" -> "call"
+ n33 -> n34 // "call" -> "DBLSandboxMyNativeFunction"
  n33 -> n35 // "call" -> "callparams"
- n35 -> n36 // "callparams" -> "PARAM"
- n36 -> n37 // "PARAM" -> ""
- n36 -> n38 // "PARAM" -> "+"
- n38 -> n39 // "+" -> ""a_stringToPrint""
- n38 -> n40 // "+" -> "call"
- n40 -> n41 // "call" -> "DBLSandboxMyNativeFunction"
+ n30 -> n36 // "+" -> "" very hard indeed""
+ n16 -> n37 // "BLOCK" -> "."
+ n37 -> n38 // "." -> "."
+ n38 -> n39 // "." -> "Game"
+ n38 -> n40 // "." -> "call"
+ n40 -> n41 // "call" -> "GetPlayer"
  n40 -> n42 // "call" -> "callparams"
- n16 -> n43 // "BLOCK" -> "."
- n43 -> n44 // "." -> "Debug"
- n43 -> n45 // "." -> "call"
- n45 -> n46 // "call" -> "Trace"
- n45 -> n47 // "call" -> "callparams"
- n47 -> n48 // "callparams" -> "PARAM"
- n48 -> n49 // "PARAM" -> ""
- n48 -> n50 // "PARAM" -> "call"
- n50 -> n51 // "call" -> "DBLSandboxMyNativeFunction"
- n50 -> n52 // "call" -> "callparams"
+ n37 -> n43 // "." -> "call"
+ n43 -> n44 // "call" -> "OpenInventory"
+ n43 -> n45 // "call" -> "callparams"
+ n16 -> n46 // "BLOCK" -> "."
+ n46 -> n47 // "." -> "Debug"
+ n46 -> n48 // "." -> "call"
+ n48 -> n49 // "call" -> "Trace"
+ n48 -> n50 // "call" -> "callparams"
+ n50 -> n51 // "callparams" -> "PARAM"
+ n51 -> n52 // "PARAM" -> ""
+ n51 -> n53 // "PARAM" -> "+"
+ n53 -> n54 // "+" -> ""a_stringToPrint""
+ n53 -> n55 // "+" -> "call"
+ n55 -> n56 // "call" -> "DBLSandboxMyNativeFunction"
+ n55 -> n57 // "call" -> "callparams"
+ n16 -> n58 // "BLOCK" -> "."
+ n58 -> n59 // "." -> "Debug"
+ n58 -> n60 // "." -> "call"
+ n60 -> n61 // "call" -> "Trace"
+ n60 -> n62 // "call" -> "callparams"
+ n62 -> n63 // "callparams" -> "PARAM"
+ n63 -> n64 // "PARAM" -> ""
+ n63 -> n65 // "PARAM" -> "call"
+ n65 -> n66 // "call" -> "DBLSandboxMyNativeFunction"
+ n65 -> n67 // "call" -> "callparams"
+ n0 -> n68 // "object" -> "event"
+ n68 -> n69 // "event" -> "header"
+ n69 -> n70 // "header" -> "NONE"
+ n69 -> n71 // "header" -> "OnKeyDown"
+ n69 -> n72 // "header" -> "0"
+ n69 -> n73 // "header" -> "parameter"
+ n73 -> n74 // "parameter" -> "Int"
+ n73 -> n75 // "parameter" -> "KeyCode"
+ n68 -> n76 // "event" -> "BLOCK"
+ n76 -> n77 // "BLOCK" -> "."
+ n77 -> n78 // "." -> "Debug"
+ n77 -> n79 // "." -> "call"
+ n79 -> n80 // "call" -> "MessageBox"
+ n79 -> n81 // "call" -> "callparams"
+ n81 -> n82 // "callparams" -> "PARAM"
+ n82 -> n83 // "PARAM" -> ""
+ n82 -> n84 // "PARAM" -> ""Inv open?""
+ n76 -> n85 // "BLOCK" -> "If"
+ n85 -> n86 // "If" -> "=="
+ n86 -> n87 // "==" -> "KeyCode"
+ n86 -> n88 // "==" -> "200"
+ n85 -> n89 // "If" -> "BLOCK"
+ n89 -> n90 // "BLOCK" -> "."
+ n90 -> n91 // "." -> "."
+ n91 -> n92 // "." -> "Game"
+ n91 -> n93 // "." -> "call"
+ n93 -> n94 // "call" -> "GetPlayer"
+ n93 -> n95 // "call" -> "callparams"
+ n90 -> n96 // "." -> "call"
+ n96 -> n97 // "call" -> "OpenInventory"
+ n96 -> n98 // "call" -> "callparams"
+ n98 -> n99 // "callparams" -> "PARAM"
+ n99 -> n100 // "PARAM" -> ""
+ n99 -> n101 // "PARAM" -> "true"
+ n89 -> n102 // "BLOCK" -> "."
+ n102 -> n103 // "." -> "Debug"
+ n102 -> n104 // "." -> "call"
+ n104 -> n105 // "call" -> "MessageBox"
+ n104 -> n106 // "call" -> "callparams"
+ n106 -> n107 // "callparams" -> "PARAM"
+ n107 -> n108 // "PARAM" -> ""
+ n107 -> n109 // "PARAM" -> "+"
+ n109 -> n110 // "+" -> ""We are ""
+ n109 -> n111 // "+" -> "call"
+ n111 -> n112 // "call" -> "DBLSandboxMyNativeFunction"
+ n111 -> n113 // "call" -> "callparams"
 
 }

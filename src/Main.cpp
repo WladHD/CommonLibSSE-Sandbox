@@ -5,7 +5,7 @@
 
 SKSEPluginLoad(const SKSE::LoadInterface* a_skse)
 {
-    InitLogging();
+    SetupLog();
 
     const auto plugin = SKSE::PluginDeclaration::GetSingleton();
     logs::info("{} v{} is loading...", plugin->GetName(), plugin->GetVersion());
@@ -15,7 +15,9 @@ SKSEPluginLoad(const SKSE::LoadInterface* a_skse)
     InitPapyrus();
     InitSerialization();
 
-    logs::info("{} loaded.", plugin->GetName());
+    // spdlog::info("sdf");
+    // SKSE::log::info("sdf");
+    // logger::trace("sdf");
 
     return true;
 }

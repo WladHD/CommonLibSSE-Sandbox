@@ -2,7 +2,7 @@
 # General preset taken from https://leimao.github.io/blog/Clang-Format-Quick-Tutorial/
 Language:        Cpp
 # BasedOnStyle:  LLVM
-AccessModifierOffset: -4 # -2
+AccessModifierOffset: 2
 AlignAfterOpenBracket: BlockIndent
 AlignArrayOfStructures: Left
 AlignConsecutiveAssignments: true

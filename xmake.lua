@@ -2,10 +2,10 @@
 set_xmakever("2.7.7")
 
 -- set project
-set_project("template-commonlibsse-ng")
+set_project("CommonLibSSE-Sandbox")
 set_version("0.1.0")
 set_license("MIT License")
-set_languages("c++23")
+set_languages("c++20")
 set_optimize("faster")
 set_warnings("allextra", "error")
 
@@ -25,15 +25,23 @@ add_rules("plugin.vsxmake.autoupdate")
 set_policy("build.ccache", false)
 set_policy("package.requires_lock", true)
 
+add_repositories("simpleini https://github.com/brofield/simpleini.git")
+
 -- require packages
 add_requires("fmt")
+add_requires("rapidjson")
 add_requires("spdlog", { configs = { header_only = false } })
 add_requires("commonlibsse-ng", { configs = { skyrim_vr = false } })
+add_requires("vcpkg::simpleini")
+add_requires("boost")
 
 -- targets
 target("do-be-like")
+    -- disable all warnings
+    -- add_cxflags("-w")
+
     -- add packages to target
-    add_packages("fmt", "spdlog", "commonlibsse-ng")
+    add_packages("fmt", "spdlog", "commonlibsse-ng", "rapidjson", "vcpkg::simpleini", "boost")
 
     -- add commonlibsse-ng plugin
     add_rules("@commonlibsse-ng/plugin", {
@@ -46,6 +54,7 @@ target("do-be-like")
     add_files("src/**.cpp")
     add_headerfiles("src/**.h")
     add_includedirs("src")
+    add_includedirs("include")
     set_pcxxheader("src/PCH.h")
 
     -- copy build files to MODS or SKYRIM paths
@@ -82,6 +91,7 @@ target("do-be-like")
                 local pscFile = path.absolute(file)
                 local pscFileMoveTo = compilersImportScriptSourceDirs .. "\\" .. path.filename(file)
                 os.rm(pscFileMoveTo)
+                print("Removed: " .. pscFileMoveTo)
             end
         end
 

@@ -1,0 +1,333 @@
+digraph {
+ ordering=out;
+ ranksep=.4
+ rankdir=LR
+ bgcolor="lightgrey";
+ node [shape=box, fixedsize=false, fontsize=12, fontname="Helvetica-bold", fontcolor="blue"
+       width=.25, height=.25, color="black", style="bold"]
+ n0 [label="object"];
+ n1 [label="DoBeLikeHorseScript"];
+ n1 [label="DoBeLikeHorseScript"];
+ n2 [label="0"];
+ n3 [label="ObjectReference"];
+ n4 [label="event"];
+ n4 [label="event"];
+ n5 [label="header"];
+ n5 [label="header"];
+ n6 [label="NONE"];
+ n7 [label="OnLoad"];
+ n8 [label="0"];
+ n9 [label="BLOCK"];
+ n9 [label="BLOCK"];
+ n10 [label="VAR"];
+ n10 [label="VAR"];
+ n11 [label="none"];
+ n12 [label="::nonevar"];
+ n13 [label="."];
+ n13 [label="."];
+ n14 [label="Debug"];
+ n15 [label="callglobal"];
+ n15 [label="callglobal"];
+ n16 [label="debug"];
+ n17 [label="MessageBox"];
+ n18 [label="::nonevar"];
+ n19 [label="CALLPARAMS"];
+ n19 [label="CALLPARAMS"];
+ n20 [label="PARAM"];
+ n20 [label="PARAM"];
+ n21 [label="\"Horse do be fancy\""];
+ n22 [label="\"Horse do be fancy\""];
+ n23 [label="event"];
+ n23 [label="event"];
+ n24 [label="header"];
+ n24 [label="header"];
+ n25 [label="NONE"];
+ n26 [label="OnHit"];
+ n27 [label="0"];
+ n28 [label="parameter"];
+ n28 [label="parameter"];
+ n29 [label="ObjectReference"];
+ n30 [label="akAggressor"];
+ n31 [label="parameter"];
+ n31 [label="parameter"];
+ n32 [label="Form"];
+ n33 [label="akSource"];
+ n34 [label="parameter"];
+ n34 [label="parameter"];
+ n35 [label="Projectile"];
+ n36 [label="akProjectile"];
+ n37 [label="parameter"];
+ n37 [label="parameter"];
+ n38 [label="bool"];
+ n39 [label="abPowerAttack"];
+ n40 [label="parameter"];
+ n40 [label="parameter"];
+ n41 [label="bool"];
+ n42 [label="abSneakAttack"];
+ n43 [label="parameter"];
+ n43 [label="parameter"];
+ n44 [label="bool"];
+ n45 [label="abBashAttack"];
+ n46 [label="parameter"];
+ n46 [label="parameter"];
+ n47 [label="bool"];
+ n48 [label="abHitBlocked"];
+ n49 [label="BLOCK"];
+ n49 [label="BLOCK"];
+ n50 [label="VAR"];
+ n50 [label="VAR"];
+ n51 [label="none"];
+ n52 [label="::nonevar"];
+ n53 [label="."];
+ n53 [label="."];
+ n54 [label="Debug"];
+ n55 [label="callglobal"];
+ n55 [label="callglobal"];
+ n56 [label="debug"];
+ n57 [label="MessageBox"];
+ n58 [label="::nonevar"];
+ n59 [label="CALLPARAMS"];
+ n59 [label="CALLPARAMS"];
+ n60 [label="PARAM"];
+ n60 [label="PARAM"];
+ n61 [label="\"horsey sad\""];
+ n62 [label="\"horsey sad\""];
+ n63 [label="event"];
+ n63 [label="event"];
+ n64 [label="header"];
+ n64 [label="header"];
+ n65 [label="NONE"];
+ n66 [label="OnActivate"];
+ n67 [label="0"];
+ n68 [label="parameter"];
+ n68 [label="parameter"];
+ n69 [label="ObjectReference"];
+ n70 [label="akActionRef"];
+ n71 [label="BLOCK"];
+ n71 [label="BLOCK"];
+ n72 [label="VAR"];
+ n72 [label="VAR"];
+ n73 [label="none"];
+ n74 [label="::nonevar"];
+ n75 [label="VAR"];
+ n75 [label="VAR"];
+ n76 [label="actor"];
+ n77 [label="::temp0"];
+ n78 [label="VAR"];
+ n78 [label="VAR"];
+ n79 [label="objectreference"];
+ n80 [label="::temp1"];
+ n81 [label="VAR"];
+ n81 [label="VAR"];
+ n82 [label="bool"];
+ n83 [label="::temp2"];
+ n84 [label="."];
+ n84 [label="."];
+ n85 [label="Debug"];
+ n86 [label="callglobal"];
+ n86 [label="callglobal"];
+ n87 [label="debug"];
+ n88 [label="MessageBox"];
+ n89 [label="::nonevar"];
+ n90 [label="CALLPARAMS"];
+ n90 [label="CALLPARAMS"];
+ n91 [label="PARAM"];
+ n91 [label="PARAM"];
+ n92 [label="\"Do Be on horse asd\""];
+ n93 [label="\"Do Be on horse asd\""];
+ n94 [label="if"];
+ n94 [label="if"];
+ n95 [label="=="];
+ n95 [label="=="];
+ n96 [label="::temp2"];
+ n97 [label="akActionRef"];
+ n98 [label="AS"];
+ n98 [label="AS"];
+ n99 [label="::temp1"];
+ n100 [label="::temp0"];
+ n101 [label="akActionRef"];
+ n102 [label="."];
+ n102 [label="."];
+ n103 [label="Game"];
+ n104 [label="callglobal"];
+ n104 [label="callglobal"];
+ n105 [label="game"];
+ n106 [label="GetPlayer"];
+ n107 [label="::temp0"];
+ n108 [label="CALLPARAMS"];
+ n109 [label="BLOCK"];
+ n109 [label="BLOCK"];
+ n110 [label="."];
+ n110 [label="."];
+ n111 [label="Debug"];
+ n112 [label="callglobal"];
+ n112 [label="callglobal"];
+ n113 [label="debug"];
+ n114 [label="MessageBox"];
+ n115 [label="::nonevar"];
+ n116 [label="CALLPARAMS"];
+ n116 [label="CALLPARAMS"];
+ n117 [label="PARAM"];
+ n117 [label="PARAM"];
+ n118 [label="\"Do Be on horse\""];
+ n119 [label="\"Do Be on horse\""];
+ n120 [label="."];
+ n120 [label="."];
+ n121 [label="."];
+ n121 [label="."];
+ n122 [label="Game"];
+ n123 [label="callglobal"];
+ n123 [label="callglobal"];
+ n124 [label="game"];
+ n125 [label="GetPlayer"];
+ n126 [label="::temp0"];
+ n127 [label="CALLPARAMS"];
+ n128 [label="call"];
+ n128 [label="call"];
+ n129 [label="::temp0"];
+ n130 [label="OpenInventory"];
+ n131 [label="::nonevar"];
+ n132 [label="CALLPARAMS"];
+ n132 [label="CALLPARAMS"];
+ n133 [label="PARAM"];
+ n133 [label="PARAM"];
+ n134 [label="true"];
+ n135 [label="true"];
+
+ n0 -> n1 // "object" -> "DoBeLikeHorseScript"
+ n1 -> n2 // "DoBeLikeHorseScript" -> "0"
+ n1 -> n3 // "DoBeLikeHorseScript" -> "ObjectReference"
+ n0 -> n4 // "object" -> "event"
+ n4 -> n5 // "event" -> "header"
+ n5 -> n6 // "header" -> "NONE"
+ n5 -> n7 // "header" -> "OnLoad"
+ n5 -> n8 // "header" -> "0"
+ n4 -> n9 // "event" -> "BLOCK"
+ n9 -> n10 // "BLOCK" -> "VAR"
+ n10 -> n11 // "VAR" -> "none"
+ n10 -> n12 // "VAR" -> "::nonevar"
+ n9 -> n13 // "BLOCK" -> "."
+ n13 -> n14 // "." -> "Debug"
+ n13 -> n15 // "." -> "callglobal"
+ n15 -> n16 // "callglobal" -> "debug"
+ n15 -> n17 // "callglobal" -> "MessageBox"
+ n15 -> n18 // "callglobal" -> "::nonevar"
+ n15 -> n19 // "callglobal" -> "CALLPARAMS"
+ n19 -> n20 // "CALLPARAMS" -> "PARAM"
+ n20 -> n21 // "PARAM" -> ""Horse do be fancy""
+ n20 -> n22 // "PARAM" -> ""Horse do be fancy""
+ n0 -> n23 // "object" -> "event"
+ n23 -> n24 // "event" -> "header"
+ n24 -> n25 // "header" -> "NONE"
+ n24 -> n26 // "header" -> "OnHit"
+ n24 -> n27 // "header" -> "0"
+ n24 -> n28 // "header" -> "parameter"
+ n28 -> n29 // "parameter" -> "ObjectReference"
+ n28 -> n30 // "parameter" -> "akAggressor"
+ n24 -> n31 // "header" -> "parameter"
+ n31 -> n32 // "parameter" -> "Form"
+ n31 -> n33 // "parameter" -> "akSource"
+ n24 -> n34 // "header" -> "parameter"
+ n34 -> n35 // "parameter" -> "Projectile"
+ n34 -> n36 // "parameter" -> "akProjectile"
+ n24 -> n37 // "header" -> "parameter"
+ n37 -> n38 // "parameter" -> "bool"
+ n37 -> n39 // "parameter" -> "abPowerAttack"
+ n24 -> n40 // "header" -> "parameter"
+ n40 -> n41 // "parameter" -> "bool"
+ n40 -> n42 // "parameter" -> "abSneakAttack"
+ n24 -> n43 // "header" -> "parameter"
+ n43 -> n44 // "parameter" -> "bool"
+ n43 -> n45 // "parameter" -> "abBashAttack"
+ n24 -> n46 // "header" -> "parameter"
+ n46 -> n47 // "parameter" -> "bool"
+ n46 -> n48 // "parameter" -> "abHitBlocked"
+ n23 -> n49 // "event" -> "BLOCK"
+ n49 -> n50 // "BLOCK" -> "VAR"
+ n50 -> n51 // "VAR" -> "none"
+ n50 -> n52 // "VAR" -> "::nonevar"
+ n49 -> n53 // "BLOCK" -> "."
+ n53 -> n54 // "." -> "Debug"
+ n53 -> n55 // "." -> "callglobal"
+ n55 -> n56 // "callglobal" -> "debug"
+ n55 -> n57 // "callglobal" -> "MessageBox"
+ n55 -> n58 // "callglobal" -> "::nonevar"
+ n55 -> n59 // "callglobal" -> "CALLPARAMS"
+ n59 -> n60 // "CALLPARAMS" -> "PARAM"
+ n60 -> n61 // "PARAM" -> ""horsey sad""
+ n60 -> n62 // "PARAM" -> ""horsey sad""
+ n0 -> n63 // "object" -> "event"
+ n63 -> n64 // "event" -> "header"
+ n64 -> n65 // "header" -> "NONE"
+ n64 -> n66 // "header" -> "OnActivate"
+ n64 -> n67 // "header" -> "0"
+ n64 -> n68 // "header" -> "parameter"
+ n68 -> n69 // "parameter" -> "ObjectReference"
+ n68 -> n70 // "parameter" -> "akActionRef"
+ n63 -> n71 // "event" -> "BLOCK"
+ n71 -> n72 // "BLOCK" -> "VAR"
+ n72 -> n73 // "VAR" -> "none"
+ n72 -> n74 // "VAR" -> "::nonevar"
+ n71 -> n75 // "BLOCK" -> "VAR"
+ n75 -> n76 // "VAR" -> "actor"
+ n75 -> n77 // "VAR" -> "::temp0"
+ n71 -> n78 // "BLOCK" -> "VAR"
+ n78 -> n79 // "VAR" -> "objectreference"
+ n78 -> n80 // "VAR" -> "::temp1"
+ n71 -> n81 // "BLOCK" -> "VAR"
+ n81 -> n82 // "VAR" -> "bool"
+ n81 -> n83 // "VAR" -> "::temp2"
+ n71 -> n84 // "BLOCK" -> "."
+ n84 -> n85 // "." -> "Debug"
+ n84 -> n86 // "." -> "callglobal"
+ n86 -> n87 // "callglobal" -> "debug"
+ n86 -> n88 // "callglobal" -> "MessageBox"
+ n86 -> n89 // "callglobal" -> "::nonevar"
+ n86 -> n90 // "callglobal" -> "CALLPARAMS"
+ n90 -> n91 // "CALLPARAMS" -> "PARAM"
+ n91 -> n92 // "PARAM" -> ""Do Be on horse asd""
+ n91 -> n93 // "PARAM" -> ""Do Be on horse asd""
+ n71 -> n94 // "BLOCK" -> "if"
+ n94 -> n95 // "if" -> "=="
+ n95 -> n96 // "==" -> "::temp2"
+ n95 -> n97 // "==" -> "akActionRef"
+ n95 -> n98 // "==" -> "AS"
+ n98 -> n99 // "AS" -> "::temp1"
+ n98 -> n100 // "AS" -> "::temp0"
+ n95 -> n101 // "==" -> "akActionRef"
+ n95 -> n102 // "==" -> "."
+ n102 -> n103 // "." -> "Game"
+ n102 -> n104 // "." -> "callglobal"
+ n104 -> n105 // "callglobal" -> "game"
+ n104 -> n106 // "callglobal" -> "GetPlayer"
+ n104 -> n107 // "callglobal" -> "::temp0"
+ n104 -> n108 // "callglobal" -> "CALLPARAMS"
+ n94 -> n109 // "if" -> "BLOCK"
+ n109 -> n110 // "BLOCK" -> "."
+ n110 -> n111 // "." -> "Debug"
+ n110 -> n112 // "." -> "callglobal"
+ n112 -> n113 // "callglobal" -> "debug"
+ n112 -> n114 // "callglobal" -> "MessageBox"
+ n112 -> n115 // "callglobal" -> "::nonevar"
+ n112 -> n116 // "callglobal" -> "CALLPARAMS"
+ n116 -> n117 // "CALLPARAMS" -> "PARAM"
+ n117 -> n118 // "PARAM" -> ""Do Be on horse""
+ n117 -> n119 // "PARAM" -> ""Do Be on horse""
+ n109 -> n120 // "BLOCK" -> "."
+ n120 -> n121 // "." -> "."
+ n121 -> n122 // "." -> "Game"
+ n121 -> n123 // "." -> "callglobal"
+ n123 -> n124 // "callglobal" -> "game"
+ n123 -> n125 // "callglobal" -> "GetPlayer"
+ n123 -> n126 // "callglobal" -> "::temp0"
+ n123 -> n127 // "callglobal" -> "CALLPARAMS"
+ n120 -> n128 // "." -> "call"
+ n128 -> n129 // "call" -> "::temp0"
+ n128 -> n130 // "call" -> "OpenInventory"
+ n128 -> n131 // "call" -> "::nonevar"
+ n128 -> n132 // "call" -> "CALLPARAMS"
+ n132 -> n133 // "CALLPARAMS" -> "PARAM"
+ n133 -> n134 // "PARAM" -> "true"
+ n133 -> n135 // "PARAM" -> "true"
+
+}

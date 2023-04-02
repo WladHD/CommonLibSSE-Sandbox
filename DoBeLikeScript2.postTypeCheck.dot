@@ -30,95 +30,233 @@ digraph {
  n16 [label="BLOCK"];
  n17 [label="VAR"];
  n17 [label="VAR"];
- n18 [label="string"];
- n19 [label="::temp0"];
+ n18 [label="none"];
+ n19 [label="::nonevar"];
  n20 [label="VAR"];
  n20 [label="VAR"];
- n21 [label="none"];
- n22 [label="::nonevar"];
- n23 [label="."];
- n23 [label="."];
- n24 [label="Debug"];
- n25 [label="callglobal"];
- n25 [label="callglobal"];
- n26 [label="debug"];
- n27 [label="MessageBox"];
- n28 [label="::nonevar"];
- n29 [label="CALLPARAMS"];
- n29 [label="CALLPARAMS"];
- n30 [label="PARAM"];
- n30 [label="PARAM"];
- n31 [label="::temp0"];
- n32 [label="STRCAT"];
- n32 [label="STRCAT"];
- n33 [label="::temp0"];
- n34 [label="::temp0"];
- n35 [label="\" very hard\""];
- n36 [label="STRCAT"];
- n36 [label="STRCAT"];
- n37 [label="::temp0"];
- n38 [label="\"We do be \""];
- n39 [label="::temp0"];
- n40 [label="\"We do be \""];
- n41 [label="callglobal"];
- n41 [label="callglobal"];
- n42 [label="dobelikescript2"];
- n43 [label="DBLSandboxMyNativeFunction"];
+ n21 [label="string"];
+ n22 [label="::temp0"];
+ n23 [label="VAR"];
+ n23 [label="VAR"];
+ n24 [label="actor"];
+ n25 [label="::temp1"];
+ n26 [label="call"];
+ n26 [label="call"];
+ n27 [label="self"];
+ n28 [label="RegisterForKey"];
+ n29 [label="::nonevar"];
+ n30 [label="CALLPARAMS"];
+ n30 [label="CALLPARAMS"];
+ n31 [label="PARAM"];
+ n31 [label="PARAM"];
+ n32 [label="200"];
+ n33 [label="200"];
+ n34 [label="."];
+ n34 [label="."];
+ n35 [label="Debug"];
+ n36 [label="callglobal"];
+ n36 [label="callglobal"];
+ n37 [label="debug"];
+ n38 [label="MessageBox"];
+ n39 [label="::nonevar"];
+ n40 [label="CALLPARAMS"];
+ n40 [label="CALLPARAMS"];
+ n41 [label="PARAM"];
+ n41 [label="PARAM"];
+ n42 [label="::temp0"];
+ n43 [label="STRCAT"];
+ n43 [label="STRCAT"];
  n44 [label="::temp0"];
- n45 [label="CALLPARAMS"];
- n46 [label="\" very hard\""];
- n47 [label="."];
- n47 [label="."];
- n48 [label="Debug"];
- n49 [label="callglobal"];
- n49 [label="callglobal"];
- n50 [label="debug"];
- n51 [label="Trace"];
- n52 [label="::nonevar"];
- n53 [label="CALLPARAMS"];
- n53 [label="CALLPARAMS"];
- n54 [label="PARAM"];
- n54 [label="PARAM"];
+ n45 [label="::temp0"];
+ n46 [label="\" very hard indeed\""];
+ n47 [label="STRCAT"];
+ n47 [label="STRCAT"];
+ n48 [label="::temp0"];
+ n49 [label="\"We papydo be \""];
+ n50 [label="::temp0"];
+ n51 [label="\"We papydo be \""];
+ n52 [label="callglobal"];
+ n52 [label="callglobal"];
+ n53 [label="dobelikescript2"];
+ n54 [label="DBLSandboxMyNativeFunction"];
  n55 [label="::temp0"];
- n56 [label="STRCAT"];
- n56 [label="STRCAT"];
- n57 [label="::temp0"];
- n58 [label="\"a_stringToPrint\""];
- n59 [label="::temp0"];
- n60 [label="\"a_stringToPrint\""];
+ n56 [label="CALLPARAMS"];
+ n57 [label="\" very hard indeed\""];
+ n58 [label="."];
+ n58 [label="."];
+ n59 [label="."];
+ n59 [label="."];
+ n60 [label="Game"];
  n61 [label="callglobal"];
  n61 [label="callglobal"];
- n62 [label="dobelikescript2"];
- n63 [label="DBLSandboxMyNativeFunction"];
- n64 [label="::temp0"];
+ n62 [label="game"];
+ n63 [label="GetPlayer"];
+ n64 [label="::temp1"];
  n65 [label="CALLPARAMS"];
- n66 [label="PARAM"];
- n66 [label="PARAM"];
- n67 [label="0"];
- n67 [label="0"];
- n68 [label="."];
- n68 [label="."];
- n69 [label="Debug"];
- n70 [label="callglobal"];
- n70 [label="callglobal"];
- n71 [label="debug"];
- n72 [label="Trace"];
- n73 [label="::nonevar"];
- n74 [label="CALLPARAMS"];
- n74 [label="CALLPARAMS"];
- n75 [label="PARAM"];
- n75 [label="PARAM"];
- n76 [label="::temp0"];
- n77 [label="callglobal"];
- n77 [label="callglobal"];
- n78 [label="dobelikescript2"];
- n79 [label="DBLSandboxMyNativeFunction"];
- n80 [label="::temp0"];
- n81 [label="CALLPARAMS"];
- n82 [label="PARAM"];
- n82 [label="PARAM"];
- n83 [label="0"];
- n83 [label="0"];
+ n66 [label="call"];
+ n66 [label="call"];
+ n67 [label="::temp1"];
+ n68 [label="OpenInventory"];
+ n69 [label="::nonevar"];
+ n70 [label="CALLPARAMS"];
+ n70 [label="CALLPARAMS"];
+ n71 [label="PARAM"];
+ n71 [label="PARAM"];
+ n72 [label="false"];
+ n72 [label="false"];
+ n73 [label="."];
+ n73 [label="."];
+ n74 [label="Debug"];
+ n75 [label="callglobal"];
+ n75 [label="callglobal"];
+ n76 [label="debug"];
+ n77 [label="Trace"];
+ n78 [label="::nonevar"];
+ n79 [label="CALLPARAMS"];
+ n79 [label="CALLPARAMS"];
+ n80 [label="PARAM"];
+ n80 [label="PARAM"];
+ n81 [label="::temp0"];
+ n82 [label="STRCAT"];
+ n82 [label="STRCAT"];
+ n83 [label="::temp0"];
+ n84 [label="\"a_stringToPrint\""];
+ n85 [label="::temp0"];
+ n86 [label="\"a_stringToPrint\""];
+ n87 [label="callglobal"];
+ n87 [label="callglobal"];
+ n88 [label="dobelikescript2"];
+ n89 [label="DBLSandboxMyNativeFunction"];
+ n90 [label="::temp0"];
+ n91 [label="CALLPARAMS"];
+ n92 [label="PARAM"];
+ n92 [label="PARAM"];
+ n93 [label="0"];
+ n93 [label="0"];
+ n94 [label="."];
+ n94 [label="."];
+ n95 [label="Debug"];
+ n96 [label="callglobal"];
+ n96 [label="callglobal"];
+ n97 [label="debug"];
+ n98 [label="Trace"];
+ n99 [label="::nonevar"];
+ n100 [label="CALLPARAMS"];
+ n100 [label="CALLPARAMS"];
+ n101 [label="PARAM"];
+ n101 [label="PARAM"];
+ n102 [label="::temp0"];
+ n103 [label="callglobal"];
+ n103 [label="callglobal"];
+ n104 [label="dobelikescript2"];
+ n105 [label="DBLSandboxMyNativeFunction"];
+ n106 [label="::temp0"];
+ n107 [label="CALLPARAMS"];
+ n108 [label="PARAM"];
+ n108 [label="PARAM"];
+ n109 [label="0"];
+ n109 [label="0"];
+ n110 [label="event"];
+ n110 [label="event"];
+ n111 [label="header"];
+ n111 [label="header"];
+ n112 [label="NONE"];
+ n113 [label="OnKeyDown"];
+ n114 [label="0"];
+ n115 [label="parameter"];
+ n115 [label="parameter"];
+ n116 [label="Int"];
+ n117 [label="KeyCode"];
+ n118 [label="BLOCK"];
+ n118 [label="BLOCK"];
+ n119 [label="VAR"];
+ n119 [label="VAR"];
+ n120 [label="none"];
+ n121 [label="::nonevar"];
+ n122 [label="VAR"];
+ n122 [label="VAR"];
+ n123 [label="bool"];
+ n124 [label="::temp2"];
+ n125 [label="."];
+ n125 [label="."];
+ n126 [label="Debug"];
+ n127 [label="callglobal"];
+ n127 [label="callglobal"];
+ n128 [label="debug"];
+ n129 [label="MessageBox"];
+ n130 [label="::nonevar"];
+ n131 [label="CALLPARAMS"];
+ n131 [label="CALLPARAMS"];
+ n132 [label="PARAM"];
+ n132 [label="PARAM"];
+ n133 [label="\"Inv open?\""];
+ n134 [label="\"Inv open?\""];
+ n135 [label="If"];
+ n135 [label="If"];
+ n136 [label="=="];
+ n136 [label="=="];
+ n137 [label="::temp2"];
+ n138 [label="KeyCode"];
+ n139 [label="200"];
+ n140 [label="KeyCode"];
+ n141 [label="200"];
+ n142 [label="BLOCK"];
+ n142 [label="BLOCK"];
+ n143 [label="VAR"];
+ n143 [label="VAR"];
+ n144 [label="actor"];
+ n145 [label="::temp3"];
+ n146 [label="VAR"];
+ n146 [label="VAR"];
+ n147 [label="string"];
+ n148 [label="::temp4"];
+ n149 [label="."];
+ n149 [label="."];
+ n150 [label="."];
+ n150 [label="."];
+ n151 [label="Game"];
+ n152 [label="callglobal"];
+ n152 [label="callglobal"];
+ n153 [label="game"];
+ n154 [label="GetPlayer"];
+ n155 [label="::temp3"];
+ n156 [label="CALLPARAMS"];
+ n157 [label="call"];
+ n157 [label="call"];
+ n158 [label="::temp3"];
+ n159 [label="OpenInventory"];
+ n160 [label="::nonevar"];
+ n161 [label="CALLPARAMS"];
+ n161 [label="CALLPARAMS"];
+ n162 [label="PARAM"];
+ n162 [label="PARAM"];
+ n163 [label="true"];
+ n164 [label="true"];
+ n165 [label="."];
+ n165 [label="."];
+ n166 [label="Debug"];
+ n167 [label="callglobal"];
+ n167 [label="callglobal"];
+ n168 [label="debug"];
+ n169 [label="MessageBox"];
+ n170 [label="::nonevar"];
+ n171 [label="CALLPARAMS"];
+ n171 [label="CALLPARAMS"];
+ n172 [label="PARAM"];
+ n172 [label="PARAM"];
+ n173 [label="::temp4"];
+ n174 [label="STRCAT"];
+ n174 [label="STRCAT"];
+ n175 [label="::temp4"];
+ n176 [label="\"We are \""];
+ n177 [label="::temp4"];
+ n178 [label="\"We are \""];
+ n179 [label="callglobal"];
+ n179 [label="callglobal"];
+ n180 [label="dobelikescript2"];
+ n181 [label="DBLSandboxMyNativeFunction"];
+ n182 [label="::temp4"];
+ n183 [label="CALLPARAMS"];
 
  n0 -> n1 // "object" -> "DoBeLikeScript2"
  n1 -> n2 // "DoBeLikeScript2" -> "0"
@@ -137,73 +275,174 @@ digraph {
  n12 -> n15 // "header" -> "0"
  n11 -> n16 // "event" -> "BLOCK"
  n16 -> n17 // "BLOCK" -> "VAR"
- n17 -> n18 // "VAR" -> "string"
- n17 -> n19 // "VAR" -> "::temp0"
+ n17 -> n18 // "VAR" -> "none"
+ n17 -> n19 // "VAR" -> "::nonevar"
  n16 -> n20 // "BLOCK" -> "VAR"
- n20 -> n21 // "VAR" -> "none"
- n20 -> n22 // "VAR" -> "::nonevar"
- n16 -> n23 // "BLOCK" -> "."
- n23 -> n24 // "." -> "Debug"
- n23 -> n25 // "." -> "callglobal"
- n25 -> n26 // "callglobal" -> "debug"
- n25 -> n27 // "callglobal" -> "MessageBox"
- n25 -> n28 // "callglobal" -> "::nonevar"
- n25 -> n29 // "callglobal" -> "CALLPARAMS"
- n29 -> n30 // "CALLPARAMS" -> "PARAM"
- n30 -> n31 // "PARAM" -> "::temp0"
- n30 -> n32 // "PARAM" -> "STRCAT"
- n32 -> n33 // "STRCAT" -> "::temp0"
- n32 -> n34 // "STRCAT" -> "::temp0"
- n32 -> n35 // "STRCAT" -> "" very hard""
- n32 -> n36 // "STRCAT" -> "STRCAT"
- n36 -> n37 // "STRCAT" -> "::temp0"
- n36 -> n38 // "STRCAT" -> ""We do be ""
- n36 -> n39 // "STRCAT" -> "::temp0"
- n36 -> n40 // "STRCAT" -> ""We do be ""
- n36 -> n41 // "STRCAT" -> "callglobal"
- n41 -> n42 // "callglobal" -> "dobelikescript2"
- n41 -> n43 // "callglobal" -> "DBLSandboxMyNativeFunction"
- n41 -> n44 // "callglobal" -> "::temp0"
- n41 -> n45 // "callglobal" -> "CALLPARAMS"
- n32 -> n46 // "STRCAT" -> "" very hard""
- n16 -> n47 // "BLOCK" -> "."
- n47 -> n48 // "." -> "Debug"
- n47 -> n49 // "." -> "callglobal"
- n49 -> n50 // "callglobal" -> "debug"
- n49 -> n51 // "callglobal" -> "Trace"
- n49 -> n52 // "callglobal" -> "::nonevar"
- n49 -> n53 // "callglobal" -> "CALLPARAMS"
- n53 -> n54 // "CALLPARAMS" -> "PARAM"
- n54 -> n55 // "PARAM" -> "::temp0"
- n54 -> n56 // "PARAM" -> "STRCAT"
- n56 -> n57 // "STRCAT" -> "::temp0"
- n56 -> n58 // "STRCAT" -> ""a_stringToPrint""
- n56 -> n59 // "STRCAT" -> "::temp0"
- n56 -> n60 // "STRCAT" -> ""a_stringToPrint""
- n56 -> n61 // "STRCAT" -> "callglobal"
- n61 -> n62 // "callglobal" -> "dobelikescript2"
- n61 -> n63 // "callglobal" -> "DBLSandboxMyNativeFunction"
- n61 -> n64 // "callglobal" -> "::temp0"
+ n20 -> n21 // "VAR" -> "string"
+ n20 -> n22 // "VAR" -> "::temp0"
+ n16 -> n23 // "BLOCK" -> "VAR"
+ n23 -> n24 // "VAR" -> "actor"
+ n23 -> n25 // "VAR" -> "::temp1"
+ n16 -> n26 // "BLOCK" -> "call"
+ n26 -> n27 // "call" -> "self"
+ n26 -> n28 // "call" -> "RegisterForKey"
+ n26 -> n29 // "call" -> "::nonevar"
+ n26 -> n30 // "call" -> "CALLPARAMS"
+ n30 -> n31 // "CALLPARAMS" -> "PARAM"
+ n31 -> n32 // "PARAM" -> "200"
+ n31 -> n33 // "PARAM" -> "200"
+ n16 -> n34 // "BLOCK" -> "."
+ n34 -> n35 // "." -> "Debug"
+ n34 -> n36 // "." -> "callglobal"
+ n36 -> n37 // "callglobal" -> "debug"
+ n36 -> n38 // "callglobal" -> "MessageBox"
+ n36 -> n39 // "callglobal" -> "::nonevar"
+ n36 -> n40 // "callglobal" -> "CALLPARAMS"
+ n40 -> n41 // "CALLPARAMS" -> "PARAM"
+ n41 -> n42 // "PARAM" -> "::temp0"
+ n41 -> n43 // "PARAM" -> "STRCAT"
+ n43 -> n44 // "STRCAT" -> "::temp0"
+ n43 -> n45 // "STRCAT" -> "::temp0"
+ n43 -> n46 // "STRCAT" -> "" very hard indeed""
+ n43 -> n47 // "STRCAT" -> "STRCAT"
+ n47 -> n48 // "STRCAT" -> "::temp0"
+ n47 -> n49 // "STRCAT" -> ""We papydo be ""
+ n47 -> n50 // "STRCAT" -> "::temp0"
+ n47 -> n51 // "STRCAT" -> ""We papydo be ""
+ n47 -> n52 // "STRCAT" -> "callglobal"
+ n52 -> n53 // "callglobal" -> "dobelikescript2"
+ n52 -> n54 // "callglobal" -> "DBLSandboxMyNativeFunction"
+ n52 -> n55 // "callglobal" -> "::temp0"
+ n52 -> n56 // "callglobal" -> "CALLPARAMS"
+ n43 -> n57 // "STRCAT" -> "" very hard indeed""
+ n16 -> n58 // "BLOCK" -> "."
+ n58 -> n59 // "." -> "."
+ n59 -> n60 // "." -> "Game"
+ n59 -> n61 // "." -> "callglobal"
+ n61 -> n62 // "callglobal" -> "game"
+ n61 -> n63 // "callglobal" -> "GetPlayer"
+ n61 -> n64 // "callglobal" -> "::temp1"
  n61 -> n65 // "callglobal" -> "CALLPARAMS"
- n53 -> n66 // "CALLPARAMS" -> "PARAM"
- n66 -> n67 // "PARAM" -> "0"
- n66 -> n67 // "PARAM" -> "0"
- n16 -> n68 // "BLOCK" -> "."
- n68 -> n69 // "." -> "Debug"
- n68 -> n70 // "." -> "callglobal"
- n70 -> n71 // "callglobal" -> "debug"
- n70 -> n72 // "callglobal" -> "Trace"
- n70 -> n73 // "callglobal" -> "::nonevar"
- n70 -> n74 // "callglobal" -> "CALLPARAMS"
- n74 -> n75 // "CALLPARAMS" -> "PARAM"
- n75 -> n76 // "PARAM" -> "::temp0"
- n75 -> n77 // "PARAM" -> "callglobal"
- n77 -> n78 // "callglobal" -> "dobelikescript2"
- n77 -> n79 // "callglobal" -> "DBLSandboxMyNativeFunction"
- n77 -> n80 // "callglobal" -> "::temp0"
- n77 -> n81 // "callglobal" -> "CALLPARAMS"
- n74 -> n82 // "CALLPARAMS" -> "PARAM"
- n82 -> n83 // "PARAM" -> "0"
- n82 -> n83 // "PARAM" -> "0"
+ n58 -> n66 // "." -> "call"
+ n66 -> n67 // "call" -> "::temp1"
+ n66 -> n68 // "call" -> "OpenInventory"
+ n66 -> n69 // "call" -> "::nonevar"
+ n66 -> n70 // "call" -> "CALLPARAMS"
+ n70 -> n71 // "CALLPARAMS" -> "PARAM"
+ n71 -> n72 // "PARAM" -> "false"
+ n71 -> n72 // "PARAM" -> "false"
+ n16 -> n73 // "BLOCK" -> "."
+ n73 -> n74 // "." -> "Debug"
+ n73 -> n75 // "." -> "callglobal"
+ n75 -> n76 // "callglobal" -> "debug"
+ n75 -> n77 // "callglobal" -> "Trace"
+ n75 -> n78 // "callglobal" -> "::nonevar"
+ n75 -> n79 // "callglobal" -> "CALLPARAMS"
+ n79 -> n80 // "CALLPARAMS" -> "PARAM"
+ n80 -> n81 // "PARAM" -> "::temp0"
+ n80 -> n82 // "PARAM" -> "STRCAT"
+ n82 -> n83 // "STRCAT" -> "::temp0"
+ n82 -> n84 // "STRCAT" -> ""a_stringToPrint""
+ n82 -> n85 // "STRCAT" -> "::temp0"
+ n82 -> n86 // "STRCAT" -> ""a_stringToPrint""
+ n82 -> n87 // "STRCAT" -> "callglobal"
+ n87 -> n88 // "callglobal" -> "dobelikescript2"
+ n87 -> n89 // "callglobal" -> "DBLSandboxMyNativeFunction"
+ n87 -> n90 // "callglobal" -> "::temp0"
+ n87 -> n91 // "callglobal" -> "CALLPARAMS"
+ n79 -> n92 // "CALLPARAMS" -> "PARAM"
+ n92 -> n93 // "PARAM" -> "0"
+ n92 -> n93 // "PARAM" -> "0"
+ n16 -> n94 // "BLOCK" -> "."
+ n94 -> n95 // "." -> "Debug"
+ n94 -> n96 // "." -> "callglobal"
+ n96 -> n97 // "callglobal" -> "debug"
+ n96 -> n98 // "callglobal" -> "Trace"
+ n96 -> n99 // "callglobal" -> "::nonevar"
+ n96 -> n100 // "callglobal" -> "CALLPARAMS"
+ n100 -> n101 // "CALLPARAMS" -> "PARAM"
+ n101 -> n102 // "PARAM" -> "::temp0"
+ n101 -> n103 // "PARAM" -> "callglobal"
+ n103 -> n104 // "callglobal" -> "dobelikescript2"
+ n103 -> n105 // "callglobal" -> "DBLSandboxMyNativeFunction"
+ n103 -> n106 // "callglobal" -> "::temp0"
+ n103 -> n107 // "callglobal" -> "CALLPARAMS"
+ n100 -> n108 // "CALLPARAMS" -> "PARAM"
+ n108 -> n109 // "PARAM" -> "0"
+ n108 -> n109 // "PARAM" -> "0"
+ n0 -> n110 // "object" -> "event"
+ n110 -> n111 // "event" -> "header"
+ n111 -> n112 // "header" -> "NONE"
+ n111 -> n113 // "header" -> "OnKeyDown"
+ n111 -> n114 // "header" -> "0"
+ n111 -> n115 // "header" -> "parameter"
+ n115 -> n116 // "parameter" -> "Int"
+ n115 -> n117 // "parameter" -> "KeyCode"
+ n110 -> n118 // "event" -> "BLOCK"
+ n118 -> n119 // "BLOCK" -> "VAR"
+ n119 -> n120 // "VAR" -> "none"
+ n119 -> n121 // "VAR" -> "::nonevar"
+ n118 -> n122 // "BLOCK" -> "VAR"
+ n122 -> n123 // "VAR" -> "bool"
+ n122 -> n124 // "VAR" -> "::temp2"
+ n118 -> n125 // "BLOCK" -> "."
+ n125 -> n126 // "." -> "Debug"
+ n125 -> n127 // "." -> "callglobal"
+ n127 -> n128 // "callglobal" -> "debug"
+ n127 -> n129 // "callglobal" -> "MessageBox"
+ n127 -> n130 // "callglobal" -> "::nonevar"
+ n127 -> n131 // "callglobal" -> "CALLPARAMS"
+ n131 -> n132 // "CALLPARAMS" -> "PARAM"
+ n132 -> n133 // "PARAM" -> ""Inv open?""
+ n132 -> n134 // "PARAM" -> ""Inv open?""
+ n118 -> n135 // "BLOCK" -> "If"
+ n135 -> n136 // "If" -> "=="
+ n136 -> n137 // "==" -> "::temp2"
+ n136 -> n138 // "==" -> "KeyCode"
+ n136 -> n139 // "==" -> "200"
+ n136 -> n140 // "==" -> "KeyCode"
+ n136 -> n141 // "==" -> "200"
+ n135 -> n142 // "If" -> "BLOCK"
+ n142 -> n143 // "BLOCK" -> "VAR"
+ n143 -> n144 // "VAR" -> "actor"
+ n143 -> n145 // "VAR" -> "::temp3"
+ n142 -> n146 // "BLOCK" -> "VAR"
+ n146 -> n147 // "VAR" -> "string"
+ n146 -> n148 // "VAR" -> "::temp4"
+ n142 -> n149 // "BLOCK" -> "."
+ n149 -> n150 // "." -> "."
+ n150 -> n151 // "." -> "Game"
+ n150 -> n152 // "." -> "callglobal"
+ n152 -> n153 // "callglobal" -> "game"
+ n152 -> n154 // "callglobal" -> "GetPlayer"
+ n152 -> n155 // "callglobal" -> "::temp3"
+ n152 -> n156 // "callglobal" -> "CALLPARAMS"
+ n149 -> n157 // "." -> "call"
+ n157 -> n158 // "call" -> "::temp3"
+ n157 -> n159 // "call" -> "OpenInventory"
+ n157 -> n160 // "call" -> "::nonevar"
+ n157 -> n161 // "call" -> "CALLPARAMS"
+ n161 -> n162 // "CALLPARAMS" -> "PARAM"
+ n162 -> n163 // "PARAM" -> "true"
+ n162 -> n164 // "PARAM" -> "true"
+ n142 -> n165 // "BLOCK" -> "."
+ n165 -> n166 // "." -> "Debug"
+ n165 -> n167 // "." -> "callglobal"
+ n167 -> n168 // "callglobal" -> "debug"
+ n167 -> n169 // "callglobal" -> "MessageBox"
+ n167 -> n170 // "callglobal" -> "::nonevar"
+ n167 -> n171 // "callglobal" -> "CALLPARAMS"
+ n171 -> n172 // "CALLPARAMS" -> "PARAM"
+ n172 -> n173 // "PARAM" -> "::temp4"
+ n172 -> n174 // "PARAM" -> "STRCAT"
+ n174 -> n175 // "STRCAT" -> "::temp4"
+ n174 -> n176 // "STRCAT" -> ""We are ""
+ n174 -> n177 // "STRCAT" -> "::temp4"
+ n174 -> n178 // "STRCAT" -> ""We are ""
+ n174 -> n179 // "STRCAT" -> "callglobal"
+ n179 -> n180 // "callglobal" -> "dobelikescript2"
+ n179 -> n181 // "callglobal" -> "DBLSandboxMyNativeFunction"
+ n179 -> n182 // "callglobal" -> "::temp4"
+ n179 -> n183 // "callglobal" -> "CALLPARAMS"
 
 }
