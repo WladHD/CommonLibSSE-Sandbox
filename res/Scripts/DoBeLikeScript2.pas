@@ -1,7 +1,7 @@
 .info
   .source "DoBeLikeScript2.psc"
   .modifyTime 1680459512
-  .compileTime 1680473555
+  .compileTime 1680481286
   .user "Arbeitsplatz"
   .computer "DESKTOP-FB32QHR"
 .endInfo

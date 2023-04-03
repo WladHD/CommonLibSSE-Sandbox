@@ -1,23 +1,55 @@
+#include "bind/Bind.h"
 #include "init/Logging.h"
 #include "init/Messaging.h"
 #include "init/Papyrus.h"
 #include "init/Serialization.h"
 
-SKSEPluginLoad(const SKSE::LoadInterface* a_skse)
-{
-    SetupLog();
+namespace WladHD::HorseRNG {
+    class GameStartedEvent : public RE::BSTEventSink<RE::TESCellFullyLoadedEvent>
+    {
+	public:
+	    std::function<void()> callback;
 
-    const auto plugin = SKSE::PluginDeclaration::GetSingleton();
-    logs::info("{} v{} is loading...", plugin->GetName(), plugin->GetVersion());
+	    RE::BSEventNotifyControl ProcessEvent(
+		const RE::TESCellFullyLoadedEvent*,
+		RE::BSTEventSource<RE::TESCellFullyLoadedEvent>* source
+	    ) override
+	    {
+		callback();
+		source->RemoveEventSink(this);
+		return RE::BSEventNotifyControl::kContinue;
+	    }
+    };
 
-    SKSE::Init(a_skse);
-    InitMessaging();
-    InitPapyrus();
-    InitSerialization();
+    GameStartedEvent GameStartedEventListener;
 
-    // spdlog::info("sdf");
-    // SKSE::log::info("sdf");
-    // logger::trace("sdf");
+    void OnGameStart()
+    {
+	logger::error("Game started!!!");
+	SkyrimScripting::Bind::setupEnv();
+	formDataSafe();
+    }
 
-    return true;
-}
+    SKSEPluginLoad(const SKSE::LoadInterface* a_skse)
+    {
+	SetupLog();
+
+	const auto plugin = SKSE::PluginDeclaration::GetSingleton();
+	logs::info("{} v{} is loading...", plugin->GetName(), plugin->GetVersion());
+
+	SKSE::Init(a_skse);
+	InitMessaging();
+	InitPapyrus();
+	InitSerialization();
+
+	GameStartedEventListener.callback = []() { OnGameStart(); };
+	RE::ScriptEventSourceHolder::GetSingleton()->AddEventSink<RE::TESCellFullyLoadedEvent>(&GameStartedEventListener
+	);
+
+	// spdlog::info("sdf");
+	// SKSE::log::info("sdf");
+	// logger::trace("sdf");
+
+	return true;
+    }
+} // namespace WladHD::HorseRNG

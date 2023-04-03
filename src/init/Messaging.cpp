@@ -1,6 +1,6 @@
 #include "Messaging.h"
 
-#include "Bind.h"
+#include "bind/Bind.h"
 
 #include <RE/Skyrim.h>
 #include <REL/Relocation.h>
@@ -79,6 +79,8 @@ void formDataSafe()
 	SKSE::log::debug("A{} N{} LN{}", achrl, npcl, lvll);
 	SKSE::log::debug("ObjectName: {}", form->GetObjectTypeName());
 	SKSE::log::debug("GetFormType: {}", form->GetFormType());
+	SKSE::log::debug("GetFormID: {}", form->GetFormID());
+	SKSE::log::debug("GetFormEditorID: {}", form->GetFormEditorID());
 	SKSE::log::debug("FORMTYPE: {}", form->FORMTYPE);
 	SKSE::log::debug("formID: {}", formIdHex);
 
@@ -87,7 +89,10 @@ void formDataSafe()
 	SKSE::log::debug("npcClass->GetFullName: {}", formNpc->npcClass->GetFullName());
 	SKSE::log::debug("GetRace()->GetFullName: {}", formNpc->GetRace()->GetFullName());
 
-	NoESP::Bind::Bind_GeneratedObject("DoBeLikeHorseScript", formNpc);
+	// SkyrimScripting::Bind::Bind_GeneratedObject("DoBeLikeHorseScript", formNpc);
+	// SkyrimScripting::Bind::Bind_Form(formNpc, "DoBeLikeHorseScript");
+
+	SkyrimScripting::Bind::Bind_GeneratedObject_BaseFormID(form->GetFormID(), "DoBeLikeHorseScript");
     }
 
     SKSE::log::debug("A{} N{} LN{}", achr, npc, lvl);
@@ -124,7 +129,6 @@ void InitMessaging()
 		    // It is now safe to access form data.
 
 		    RE::ConsoleLog::GetSingleton()->Print(cstr);
-		    
 
 		    break;
 		// Skyrim game events.
