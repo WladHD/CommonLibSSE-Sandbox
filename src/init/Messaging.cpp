@@ -1,6 +1,6 @@
 #include "Messaging.h"
 
-#include "bind/Bind.h"
+#include "Papyrus.h"
 
 #include <RE/Skyrim.h>
 #include <REL/Relocation.h>
@@ -39,12 +39,11 @@ void formDataSafe()
     // con->Print("GetGoldValue: %s", horses->GetGoldValue() + " g");
     // RE::ConsoleLog::GetSingleton()->Print("%s", "sdf");
 
-    auto achr		    = 0;
+    /* auto achr		 = 0;
     auto npc		    = 0;
     auto lvl		    = 0;
     const auto& [all, lock] = RE::TESNPC::GetAllForms();
     for (auto& [id, form] : *all) {
-
 	auto achrl = 0;
 	auto npcl  = 0;
 	auto lvll  = 0;
@@ -92,10 +91,13 @@ void formDataSafe()
 	// SkyrimScripting::Bind::Bind_GeneratedObject("DoBeLikeHorseScript", formNpc);
 	// SkyrimScripting::Bind::Bind_Form(formNpc, "DoBeLikeHorseScript");
 
-	SkyrimScripting::Bind::Bind_GeneratedObject_BaseFormID(form->GetFormID(), "DoBeLikeHorseScript");
+	// SkyrimScripting::Bind::Bind_GeneratedObject_BaseFormID(form->GetFormID(),
+	// "DoBeLikeHorseScript");
     }
 
-    SKSE::log::debug("A{} N{} LN{}", achr, npc, lvl);
+    SKSE::log::debug("A{} N{} LN{}", achr, npc, lvl);*/
+
+    BindPapyrusScripts();
 }
 
 void InitMessaging()
@@ -115,38 +117,42 @@ void InitMessaging()
 
 	    switch (a_msg->type) {
 		// Skyrim lifecycle events.
-		case SKSE::MessagingInterface::kPostLoad: // Called after all plugins have finished running
-							  // SKSEPlugin_Load.
-		    // It is now safe to do multithreaded operations, or operations against other plugins.
+		case SKSE::MessagingInterface::kPostLoad: // Called after all plugins have finished
+							  // running SKSEPlugin_Load.
+		    // It is now safe to do multithreaded operations, or operations against other
+		    // plugins.
 		    break;
-		case SKSE::MessagingInterface::kPostPostLoad: // Called after all kPostLoad message handlers have
-							      // run.
+		case SKSE::MessagingInterface::kPostPostLoad: // Called after all kPostLoad message
+							      // handlers have run.
 		    break;
-		case SKSE::MessagingInterface::kInputLoaded: // Called when all game data has been found.
+		case SKSE::MessagingInterface::kInputLoaded: // Called when all game data has been
+							     // found.
 		    break;
-		case SKSE::MessagingInterface::kDataLoaded: // All ESM/ESL/ESP plugins have loaded, main menu is now
-							    // active.
+		case SKSE::MessagingInterface::kDataLoaded: // All ESM/ESL/ESP plugins have loaded,
+							    // main menu is now active.
 		    // It is now safe to access form data.
 
 		    RE::ConsoleLog::GetSingleton()->Print(cstr);
 
 		    break;
 		// Skyrim game events.
-		case SKSE::MessagingInterface::kNewGame: // Player starts a new game from main menu.
+		case SKSE::MessagingInterface::kNewGame: // Player starts a new game from main
+							 // menu.
 		    break;
-		case SKSE::MessagingInterface::kPreLoadGame: // Player selected a game to load, but it hasn't loaded
-							     // yet.
+		case SKSE::MessagingInterface::kPreLoadGame: // Player selected a game to load, but
+							     // it hasn't loaded yet.
 		    // a_msg->data will be the name of the loaded save.
 		    break;
-		case SKSE::MessagingInterface::kPostLoadGame: // Player's selected save game has finished loading.
+		case SKSE::MessagingInterface::kPostLoadGame: // Player's selected save game has
+							      // finished loading.
 		    // a_msg->data will be a boolean indicating whether the load was successful.
 		    formDataSafe();
 		    break;
 		case SKSE::MessagingInterface::kSaveGame: // Player has saved a game.
 		    // a_msg->data will be the save name.
 		    break;
-		case SKSE::MessagingInterface::kDeleteGame: // Player deleted a saved game from within the load
-							    // menu.
+		case SKSE::MessagingInterface::kDeleteGame: // Player deleted a saved game from
+							    // within the load menu.
 		    break;
 	    }
 	})) {

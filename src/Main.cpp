@@ -1,4 +1,3 @@
-#include "bind/Bind.h"
 #include "init/Logging.h"
 #include "init/Messaging.h"
 #include "init/Papyrus.h"
@@ -26,7 +25,7 @@ namespace WladHD::HorseRNG {
     void OnGameStart()
     {
 	logger::error("Game started!!!");
-	SkyrimScripting::Bind::setupEnv();
+	// SkyrimScripting::Bind::setupEnv();
 	formDataSafe();
     }
 

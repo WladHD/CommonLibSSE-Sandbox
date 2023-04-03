@@ -1,7 +1,7 @@
 .info
-  .source "DoBeLikeScript2.psc"
-  .modifyTime 1680459512
-  .compileTime 1680481286
+  .source "DoBeLikeScript.psc"
+  .modifyTime 1680540430
+  .compileTime 1680545095
   .user "Arbeitsplatz"
   .computer "DESKTOP-FB32QHR"
 .endInfo
@@ -10,7 +10,7 @@
   .flag hidden 0
 .endUserFlagsRef
 .objectTable
-  .object DoBeLikeScript2 Quest
+  .object DoBeLikeScript Quest
     .userFlags 0
     .docString ""
     .autoState 
@@ -63,22 +63,9 @@
           .endParamTable
           .localTable
             .local ::nonevar none
-            .local ::temp0 string
-            .local ::temp1 actor
           .endLocalTable
           .code
             CALLMETHOD RegisterForKey self ::nonevar 200 ;@line 6
-            CALLSTATIC dobelikescript2 DBLSandboxMyNativeFunction ::temp0  ;@line 7
-            STRCAT ::temp0 "We papydo be " ::temp0 ;@line 7
-            STRCAT ::temp0 ::temp0 " very hard indeed" ;@line 7
-            CALLSTATIC debug MessageBox ::nonevar ::temp0 ;@line 7
-            CALLSTATIC game GetPlayer ::temp1  ;@line 8
-            CALLMETHOD OpenInventory ::temp1 ::nonevar false ;@line 8
-            CALLSTATIC dobelikescript2 DBLSandboxMyNativeFunction ::temp0  ;@line 9
-            STRCAT ::temp0 "a_stringToPrint" ::temp0 ;@line 9
-            CALLSTATIC debug Trace ::nonevar ::temp0 0 ;@line 9
-            CALLSTATIC dobelikescript2 DBLSandboxMyNativeFunction ::temp0  ;@line 10
-            CALLSTATIC debug Trace ::nonevar ::temp0 0 ;@line 10
           .endCode
         .endFunction
         .function OnKeyDown 
@@ -89,20 +76,17 @@
             .param KeyCode Int
           .endParamTable
           .localTable
+            .local ::temp0 bool
+            .local ::temp1 string
             .local ::nonevar none
-            .local ::temp2 bool
-            .local ::temp3 actor
-            .local ::temp4 string
           .endLocalTable
           .code
-            CALLSTATIC debug MessageBox ::nonevar "Inv open?" ;@line 14
-            COMPAREEQ ::temp2 KeyCode 200 ;@line 15
-            JUMPF ::temp2 label1 ;@line 15
-            CALLSTATIC game GetPlayer ::temp3  ;@line 16
-            CALLMETHOD OpenInventory ::temp3 ::nonevar true ;@line 16
-            CALLSTATIC dobelikescript2 DBLSandboxMyNativeFunction ::temp4  ;@line 17
-            STRCAT ::temp4 "We are " ::temp4 ;@line 17
-            CALLSTATIC debug MessageBox ::nonevar ::temp4 ;@line 17
+            COMPAREEQ ::temp0 KeyCode 200 ;@line 10
+            JUMPF ::temp0 label1 ;@line 10
+            CALLSTATIC dobelikescript DBLSandboxMyNativeFunction ::temp1  ;@line 11
+            STRCAT ::temp1 "We are " ::temp1 ;@line 11
+            STRCAT ::temp1 ::temp1 " around" ;@line 11
+            CALLSTATIC debug Trace ::nonevar ::temp1 0 ;@line 11
             JUMP label0
             label1:
             label0:

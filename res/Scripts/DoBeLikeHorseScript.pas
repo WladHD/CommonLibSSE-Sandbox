@@ -1,7 +1,7 @@
 .info
   .source "DoBeLikeHorseScript.psc"
-  .modifyTime 1680481263
-  .compileTime 1680481285
+  .modifyTime 1680542561
+  .compileTime 1680545094
   .user "Arbeitsplatz"
   .computer "DESKTOP-FB32QHR"
 .endInfo
@@ -58,7 +58,7 @@
             .local ::nonevar none
           .endLocalTable
           .code
-            CALLSTATIC debug MessageBox ::nonevar "Horse do be fancy" ;@line 4
+            CALLSTATIC debug Trace ::nonevar "Horse do be fancy load" 0 ;@line 4
           .endCode
         .endFunction
         .function OnInit 
@@ -71,8 +71,8 @@
             .local ::nonevar none
           .endLocalTable
           .code
-            CALLMETHOD RegisterForKey self ::nonevar 203 ;@line 8
-            CALLSTATIC debug MessageBox ::nonevar "We do be shillin" ;@line 9
+            CALLSTATIC debug Trace ::nonevar "Horse do be fancy init" 0 ;@line 8
+            CALLMETHOD RegisterForKey self ::nonevar 203 ;@line 9
           .endCode
         .endFunction
         .function OnKeyDown 
@@ -83,14 +83,13 @@
             .param KeyCode Int
           .endParamTable
           .localTable
-            .local ::nonevar none
             .local ::temp0 bool
+            .local ::nonevar none
           .endLocalTable
           .code
-            CALLSTATIC debug MessageBox ::nonevar "hmm?" ;@line 13
-            COMPAREEQ ::temp0 KeyCode 203 ;@line 14
-            JUMPF ::temp0 label1 ;@line 14
-            CALLSTATIC debug MessageBox ::nonevar "sdf" ;@line 15
+            COMPAREEQ ::temp0 KeyCode 203 ;@line 13
+            JUMPF ::temp0 label1 ;@line 13
+            CALLSTATIC debug Trace ::nonevar "sdf" 0 ;@line 14
             JUMP label0
             label1:
             label0:
@@ -113,7 +112,7 @@
             .local ::nonevar none
           .endLocalTable
           .code
-            CALLSTATIC debug MessageBox ::nonevar "horsey sad" ;@line 20
+            CALLSTATIC debug MessageBox ::nonevar "horsey sad" ;@line 19
           .endCode
         .endFunction
         .function OnActivate 
@@ -130,14 +129,12 @@
             .local ::temp3 bool
           .endLocalTable
           .code
-            CALLSTATIC debug MessageBox ::nonevar "Do Be on horse asd" ;@line 24
-            CALLSTATIC game GetPlayer ::temp1  ;@line 25
-            CAST ::temp2 ::temp1 ;@line 25
-            COMPAREEQ ::temp3 akActionRef ::temp2 ;@line 25
-            JUMPF ::temp3 label3 ;@line 25
-            CALLSTATIC debug MessageBox ::nonevar "Do Be on horse" ;@line 26
-            CALLSTATIC game GetPlayer ::temp1  ;@line 27
-            CALLMETHOD OpenInventory ::temp1 ::nonevar true ;@line 27
+            CALLSTATIC debug Trace ::nonevar "Do Be on horse asd" 0 ;@line 23
+            CALLSTATIC game GetPlayer ::temp1  ;@line 24
+            CAST ::temp2 ::temp1 ;@line 24
+            COMPAREEQ ::temp3 akActionRef ::temp2 ;@line 24
+            JUMPF ::temp3 label3 ;@line 24
+            CALLSTATIC debug MessageBox ::nonevar "Do Be on horse" ;@line 25
             JUMP label2
             label3:
             label2:

@@ -28,42 +28,57 @@ digraph {
  n15 [label="0"];
  n16 [label="BLOCK"];
  n16 [label="BLOCK"];
- n17 [label="."];
- n17 [label="."];
- n18 [label="Debug"];
- n19 [label="call"];
- n19 [label="call"];
- n20 [label="MessageBox"];
- n21 [label="callparams"];
- n21 [label="callparams"];
- n22 [label="PARAM"];
- n22 [label="PARAM"];
- n23 [label=""];
- n24 [label="+"];
- n24 [label="+"];
- n25 [label="\"Hello, mod!\""];
- n26 [label="call"];
- n26 [label="call"];
- n27 [label="DBLSandboxMyNativeFunction"];
- n28 [label="callparams"];
- n29 [label="."];
- n29 [label="."];
- n30 [label="Debug"];
- n31 [label="call"];
- n31 [label="call"];
- n32 [label="Trace"];
- n33 [label="callparams"];
- n33 [label="callparams"];
- n34 [label="PARAM"];
- n34 [label="PARAM"];
- n35 [label=""];
- n36 [label="+"];
- n36 [label="+"];
- n37 [label="\"a_stringToPrint\""];
- n38 [label="call"];
- n38 [label="call"];
- n39 [label="DBLSandboxMyNativeFunction"];
- n40 [label="callparams"];
+ n17 [label="call"];
+ n17 [label="call"];
+ n18 [label="RegisterForKey"];
+ n19 [label="callparams"];
+ n19 [label="callparams"];
+ n20 [label="PARAM"];
+ n20 [label="PARAM"];
+ n21 [label=""];
+ n22 [label="200"];
+ n23 [label="event"];
+ n23 [label="event"];
+ n24 [label="header"];
+ n24 [label="header"];
+ n25 [label="NONE"];
+ n26 [label="OnKeyDown"];
+ n27 [label="0"];
+ n28 [label="parameter"];
+ n28 [label="parameter"];
+ n29 [label="Int"];
+ n30 [label="KeyCode"];
+ n31 [label="BLOCK"];
+ n31 [label="BLOCK"];
+ n32 [label="If"];
+ n32 [label="If"];
+ n33 [label="=="];
+ n33 [label="=="];
+ n34 [label="KeyCode"];
+ n35 [label="200"];
+ n36 [label="BLOCK"];
+ n36 [label="BLOCK"];
+ n37 [label="."];
+ n37 [label="."];
+ n38 [label="Debug"];
+ n39 [label="call"];
+ n39 [label="call"];
+ n40 [label="Trace"];
+ n41 [label="callparams"];
+ n41 [label="callparams"];
+ n42 [label="PARAM"];
+ n42 [label="PARAM"];
+ n43 [label=""];
+ n44 [label="+"];
+ n44 [label="+"];
+ n45 [label="+"];
+ n45 [label="+"];
+ n46 [label="\"We are \""];
+ n47 [label="call"];
+ n47 [label="call"];
+ n48 [label="DBLSandboxMyNativeFunction"];
+ n49 [label="callparams"];
+ n50 [label="\" around\""];
 
  n0 -> n1 // "object" -> "DoBeLikeScript"
  n1 -> n2 // "DoBeLikeScript" -> "0"
@@ -81,29 +96,39 @@ digraph {
  n12 -> n14 // "header" -> "OnInit"
  n12 -> n15 // "header" -> "0"
  n11 -> n16 // "event" -> "BLOCK"
- n16 -> n17 // "BLOCK" -> "."
- n17 -> n18 // "." -> "Debug"
- n17 -> n19 // "." -> "call"
- n19 -> n20 // "call" -> "MessageBox"
- n19 -> n21 // "call" -> "callparams"
- n21 -> n22 // "callparams" -> "PARAM"
- n22 -> n23 // "PARAM" -> ""
- n22 -> n24 // "PARAM" -> "+"
- n24 -> n25 // "+" -> ""Hello, mod!""
- n24 -> n26 // "+" -> "call"
- n26 -> n27 // "call" -> "DBLSandboxMyNativeFunction"
- n26 -> n28 // "call" -> "callparams"
- n16 -> n29 // "BLOCK" -> "."
- n29 -> n30 // "." -> "Debug"
- n29 -> n31 // "." -> "call"
- n31 -> n32 // "call" -> "Trace"
- n31 -> n33 // "call" -> "callparams"
- n33 -> n34 // "callparams" -> "PARAM"
- n34 -> n35 // "PARAM" -> ""
- n34 -> n36 // "PARAM" -> "+"
- n36 -> n37 // "+" -> ""a_stringToPrint""
- n36 -> n38 // "+" -> "call"
- n38 -> n39 // "call" -> "DBLSandboxMyNativeFunction"
- n38 -> n40 // "call" -> "callparams"
+ n16 -> n17 // "BLOCK" -> "call"
+ n17 -> n18 // "call" -> "RegisterForKey"
+ n17 -> n19 // "call" -> "callparams"
+ n19 -> n20 // "callparams" -> "PARAM"
+ n20 -> n21 // "PARAM" -> ""
+ n20 -> n22 // "PARAM" -> "200"
+ n0 -> n23 // "object" -> "event"
+ n23 -> n24 // "event" -> "header"
+ n24 -> n25 // "header" -> "NONE"
+ n24 -> n26 // "header" -> "OnKeyDown"
+ n24 -> n27 // "header" -> "0"
+ n24 -> n28 // "header" -> "parameter"
+ n28 -> n29 // "parameter" -> "Int"
+ n28 -> n30 // "parameter" -> "KeyCode"
+ n23 -> n31 // "event" -> "BLOCK"
+ n31 -> n32 // "BLOCK" -> "If"
+ n32 -> n33 // "If" -> "=="
+ n33 -> n34 // "==" -> "KeyCode"
+ n33 -> n35 // "==" -> "200"
+ n32 -> n36 // "If" -> "BLOCK"
+ n36 -> n37 // "BLOCK" -> "."
+ n37 -> n38 // "." -> "Debug"
+ n37 -> n39 // "." -> "call"
+ n39 -> n40 // "call" -> "Trace"
+ n39 -> n41 // "call" -> "callparams"
+ n41 -> n42 // "callparams" -> "PARAM"
+ n42 -> n43 // "PARAM" -> ""
+ n42 -> n44 // "PARAM" -> "+"
+ n44 -> n45 // "+" -> "+"
+ n45 -> n46 // "+" -> ""We are ""
+ n45 -> n47 // "+" -> "call"
+ n47 -> n48 // "call" -> "DBLSandboxMyNativeFunction"
+ n47 -> n49 // "call" -> "callparams"
+ n44 -> n50 // "+" -> "" around""
 
 }

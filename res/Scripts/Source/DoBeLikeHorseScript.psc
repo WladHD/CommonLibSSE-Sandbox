@@ -1,18 +1,17 @@
 ScriptName DoBeLikeHorseScript extends ObjectReference
 
 Event OnLoad()
-    Debug.MessageBox("Horse do be fancy")
+    Debug.Trace("Horse do be fancy load")
 EndEvent
 
 Event OnInit()
+    Debug.Trace("Horse do be fancy init")
     RegisterForKey(203)
-    Debug.MessageBox("We do be shillin")
 EndEvent
 
 Event OnKeyDown(Int KeyCode)
-    Debug.MessageBox("hmm?")
 	If KeyCode == 203
-		Debug.MessageBox("sdf")
+		Debug.Trace("sdf")
 	EndIf
 EndEvent
 
@@ -21,9 +20,8 @@ Event OnHit(ObjectReference akAggressor, Form akSource, Projectile akProjectile,
 EndEvent
 
 Event OnActivate(ObjectReference akActionRef)
-    Debug.MessageBox("Do Be on horse asd")
+    Debug.Trace("Do Be on horse asd")
     if akActionRef == Game.GetPlayer()
         Debug.MessageBox("Do Be on horse")
-        Game.GetPlayer().OpenInventory(true)
     endif
 EndEvent
