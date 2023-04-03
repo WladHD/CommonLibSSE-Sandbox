@@ -1,7 +1,7 @@
 .info
   .source "DoBeLikeHorseScript.psc"
-  .modifyTime 1680542561
-  .compileTime 1680547511
+  .modifyTime 1680549883
+  .compileTime 1680549945
   .user "Arbeitsplatz"
   .computer "DESKTOP-FB32QHR"
 .endInfo
@@ -89,7 +89,7 @@
           .code
             COMPAREEQ ::temp0 KeyCode 203 ;@line 13
             JUMPF ::temp0 label1 ;@line 13
-            CALLSTATIC debug Trace ::nonevar "sdf" 0 ;@line 14
+            CALLSTATIC debug MessageBox ::nonevar "sdf" ;@line 14
             JUMP label0
             label1:
             label0:

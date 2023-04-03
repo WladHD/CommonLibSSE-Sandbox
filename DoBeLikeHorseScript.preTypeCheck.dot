@@ -87,7 +87,7 @@ digraph {
  n53 [label="Debug"];
  n54 [label="call"];
  n54 [label="call"];
- n55 [label="Trace"];
+ n55 [label="MessageBox"];
  n56 [label="callparams"];
  n56 [label="callparams"];
  n57 [label="PARAM"];
@@ -249,7 +249,7 @@ digraph {
  n51 -> n52 // "BLOCK" -> "."
  n52 -> n53 // "." -> "Debug"
  n52 -> n54 // "." -> "call"
- n54 -> n55 // "call" -> "Trace"
+ n54 -> n55 // "call" -> "MessageBox"
  n54 -> n56 // "call" -> "callparams"
  n56 -> n57 // "callparams" -> "PARAM"
  n57 -> n58 // "PARAM" -> ""

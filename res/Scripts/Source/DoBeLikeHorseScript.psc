@@ -11,7 +11,7 @@ EndEvent
 
 Event OnKeyDown(Int KeyCode)
 	If KeyCode == 203
-		Debug.Trace("sdf")
+		Debug.MessageBox("sdf")
 	EndIf
 EndEvent
 
