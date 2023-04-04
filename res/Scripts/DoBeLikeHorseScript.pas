@@ -1,7 +1,7 @@
 .info
   .source "DoBeLikeHorseScript.psc"
-  .modifyTime 1680549883
-  .compileTime 1680549945
+  .modifyTime 1680645287
+  .compileTime 1680647055
   .user "Arbeitsplatz"
   .computer "DESKTOP-FB32QHR"
 .endInfo
@@ -15,8 +15,28 @@
     .docString ""
     .autoState 
     .variableTable
+      .variable myValue int
+        .userFlags 0
+        .initialValue 0
+      .endVariable
     .endVariableTable
     .propertyTable
+	  .property ReadOnlyValue int
+	    .userFlags 0
+	    .docString ""
+	    .function Get 
+	      .userFlags 0
+	      .docString ""
+	      .return int
+	      .paramTable
+	      .endParamTable
+	      .localTable
+	      .endLocalTable
+	      .code
+	        RETURN myValue ;@line 6
+	      .endCode
+	    .endFunction
+	  .endProperty
     .endPropertyTable
     .stateTable
       .state
@@ -58,7 +78,7 @@
             .local ::nonevar none
           .endLocalTable
           .code
-            CALLSTATIC debug Trace ::nonevar "Horse do be fancy load" 0 ;@line 4
+            CALLSTATIC debug Trace ::nonevar "Horse do be fancy load" 0 ;@line 11
           .endCode
         .endFunction
         .function OnInit 
@@ -71,8 +91,8 @@
             .local ::nonevar none
           .endLocalTable
           .code
-            CALLSTATIC debug Trace ::nonevar "Horse do be fancy init" 0 ;@line 8
-            CALLMETHOD RegisterForKey self ::nonevar 203 ;@line 9
+            CALLSTATIC debug Trace ::nonevar "Horse do be fancy init" 0 ;@line 15
+            CALLMETHOD RegisterForKey self ::nonevar 203 ;@line 16
           .endCode
         .endFunction
         .function OnKeyDown 
@@ -87,9 +107,9 @@
             .local ::nonevar none
           .endLocalTable
           .code
-            COMPAREEQ ::temp0 KeyCode 203 ;@line 13
-            JUMPF ::temp0 label1 ;@line 13
-            CALLSTATIC debug MessageBox ::nonevar "sdf" ;@line 14
+            COMPAREEQ ::temp0 KeyCode 203 ;@line 20
+            JUMPF ::temp0 label1 ;@line 20
+            CALLSTATIC debug MessageBox ::nonevar "sdf" ;@line 21
             JUMP label0
             label1:
             label0:
@@ -112,7 +132,7 @@
             .local ::nonevar none
           .endLocalTable
           .code
-            CALLSTATIC debug MessageBox ::nonevar "horsey sad" ;@line 19
+            CALLSTATIC debug MessageBox ::nonevar "horsey sad" ;@line 26
           .endCode
         .endFunction
         .function OnActivate 
@@ -129,12 +149,12 @@
             .local ::temp3 bool
           .endLocalTable
           .code
-            CALLSTATIC debug Trace ::nonevar "Do Be on horse asd" 0 ;@line 23
-            CALLSTATIC game GetPlayer ::temp1  ;@line 24
-            CAST ::temp2 ::temp1 ;@line 24
-            COMPAREEQ ::temp3 akActionRef ::temp2 ;@line 24
-            JUMPF ::temp3 label3 ;@line 24
-            CALLSTATIC debug MessageBox ::nonevar "Do Be on horse" ;@line 25
+            CALLSTATIC debug Trace ::nonevar "Do Be on horse asd" 0 ;@line 30
+            CALLSTATIC game GetPlayer ::temp1  ;@line 31
+            CAST ::temp2 ::temp1 ;@line 31
+            COMPAREEQ ::temp3 akActionRef ::temp2 ;@line 31
+            JUMPF ::temp3 label3 ;@line 31
+            CALLSTATIC debug MessageBox ::nonevar "Do Be on horse" ;@line 32
             JUMP label2
             label3:
             label2:

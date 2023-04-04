@@ -29,14 +29,21 @@ void Bind_Form(RE::TESForm* form, std::string ScriptName)
 
 std::string DBLSandboxMyNativeFunction(RE::StaticFunctionTag*)
 {
+
     logger::info("Placing horse");
-    RE::FormID		 lookAtMyHorse = 0x10982B;
-    RE::TESNPC*		 form	       = RE::TESForm::LookupByID<RE::TESNPC>(lookAtMyHorse);
-    RE::PlayerCharacter* player	       = RE::PlayerCharacter::GetSingleton();
+    RE::FormID	horsey = 0x109E3D;
+    RE::TESNPC* form   = RE::TESForm::LookupByID<RE::TESNPC>(horsey);
+    logger::info("Placing horse '{}'", form == nullptr);
+    if (form == nullptr) {
+	return "";
+    }
+    RE::PlayerCharacter* player = RE::PlayerCharacter::GetSingleton();
+    logger::info("Placing horse 1");
 
     player->PlaceObjectAtMe(form, true);
+    logger::info("Placing horse 2");
     logger::info(
-	"Placed horse EID'{}' FID'{}' R'{}' P'{}' U'{}' Dynamic?{}",
+	"Placed horse EID'' FID'{}' R'{}' P'{}' U'{}' Dynamic?{}",
 	form->GetFormEditorID(),
 	form->GetFormID(),
 	form->GetRefCount(),

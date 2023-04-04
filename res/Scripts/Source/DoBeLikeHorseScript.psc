@@ -1,5 +1,12 @@
 ScriptName DoBeLikeHorseScript extends ObjectReference
 
+int myValue = 0 ; Private
+int Property ReadOnlyValue ; Publicly accessible, but this one won't let anyone set it
+  int Function Get()
+    return myValue
+  EndFunction
+EndProperty
+
 Event OnLoad()
     Debug.Trace("Horse do be fancy load")
 EndEvent

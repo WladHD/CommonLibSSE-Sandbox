@@ -10,318 +10,364 @@ digraph {
  n1 [label="DoBeLikeHorseScript"];
  n2 [label="0"];
  n3 [label="ObjectReference"];
- n4 [label="event"];
- n4 [label="event"];
- n5 [label="header"];
- n5 [label="header"];
- n6 [label="NONE"];
- n7 [label="OnLoad"];
+ n4 [label="variable"];
+ n4 [label="variable"];
+ n5 [label="int"];
+ n6 [label="myValue"];
+ n7 [label="0"];
  n8 [label="0"];
- n9 [label="BLOCK"];
- n9 [label="BLOCK"];
- n10 [label="."];
- n10 [label="."];
- n11 [label="Debug"];
- n12 [label="call"];
- n12 [label="call"];
- n13 [label="Trace"];
- n14 [label="callparams"];
- n14 [label="callparams"];
- n15 [label="PARAM"];
- n15 [label="PARAM"];
- n16 [label=""];
- n17 [label="\"Horse do be fancy load\""];
- n18 [label="event"];
- n18 [label="event"];
- n19 [label="header"];
- n19 [label="header"];
- n20 [label="NONE"];
- n21 [label="OnInit"];
- n22 [label="0"];
- n23 [label="BLOCK"];
- n23 [label="BLOCK"];
- n24 [label="."];
- n24 [label="."];
- n25 [label="Debug"];
- n26 [label="call"];
- n26 [label="call"];
- n27 [label="Trace"];
- n28 [label="callparams"];
- n28 [label="callparams"];
- n29 [label="PARAM"];
- n29 [label="PARAM"];
- n30 [label=""];
- n31 [label="\"Horse do be fancy init\""];
- n32 [label="call"];
- n32 [label="call"];
- n33 [label="RegisterForKey"];
- n34 [label="callparams"];
- n34 [label="callparams"];
- n35 [label="PARAM"];
- n35 [label="PARAM"];
- n36 [label=""];
- n37 [label="203"];
- n38 [label="event"];
- n38 [label="event"];
- n39 [label="header"];
- n39 [label="header"];
- n40 [label="NONE"];
- n41 [label="OnKeyDown"];
- n42 [label="0"];
- n43 [label="parameter"];
- n43 [label="parameter"];
- n44 [label="Int"];
- n45 [label="KeyCode"];
- n46 [label="BLOCK"];
- n46 [label="BLOCK"];
- n47 [label="If"];
- n47 [label="If"];
- n48 [label="=="];
- n48 [label="=="];
- n49 [label="KeyCode"];
- n50 [label="203"];
- n51 [label="BLOCK"];
- n51 [label="BLOCK"];
- n52 [label="."];
- n52 [label="."];
- n53 [label="Debug"];
- n54 [label="call"];
- n54 [label="call"];
- n55 [label="MessageBox"];
- n56 [label="callparams"];
- n56 [label="callparams"];
- n57 [label="PARAM"];
- n57 [label="PARAM"];
- n58 [label=""];
- n59 [label="\"sdf\""];
- n60 [label="event"];
- n60 [label="event"];
- n61 [label="header"];
- n61 [label="header"];
- n62 [label="NONE"];
- n63 [label="OnHit"];
- n64 [label="0"];
- n65 [label="parameter"];
- n65 [label="parameter"];
- n66 [label="ObjectReference"];
- n67 [label="akAggressor"];
- n68 [label="parameter"];
- n68 [label="parameter"];
- n69 [label="Form"];
- n70 [label="akSource"];
- n71 [label="parameter"];
- n71 [label="parameter"];
- n72 [label="Projectile"];
- n73 [label="akProjectile"];
- n74 [label="parameter"];
- n74 [label="parameter"];
- n75 [label="bool"];
- n76 [label="abPowerAttack"];
- n77 [label="parameter"];
- n77 [label="parameter"];
- n78 [label="bool"];
- n79 [label="abSneakAttack"];
- n80 [label="parameter"];
- n80 [label="parameter"];
- n81 [label="bool"];
- n82 [label="abBashAttack"];
- n83 [label="parameter"];
- n83 [label="parameter"];
- n84 [label="bool"];
- n85 [label="abHitBlocked"];
- n86 [label="BLOCK"];
- n86 [label="BLOCK"];
- n87 [label="."];
- n87 [label="."];
- n88 [label="Debug"];
- n89 [label="call"];
- n89 [label="call"];
- n90 [label="MessageBox"];
- n91 [label="callparams"];
- n91 [label="callparams"];
- n92 [label="PARAM"];
- n92 [label="PARAM"];
- n93 [label=""];
- n94 [label="\"horsey sad\""];
- n95 [label="event"];
- n95 [label="event"];
- n96 [label="header"];
- n96 [label="header"];
- n97 [label="NONE"];
- n98 [label="OnActivate"];
- n99 [label="0"];
- n100 [label="parameter"];
- n100 [label="parameter"];
- n101 [label="ObjectReference"];
- n102 [label="akActionRef"];
- n103 [label="BLOCK"];
- n103 [label="BLOCK"];
- n104 [label="."];
- n104 [label="."];
- n105 [label="Debug"];
- n106 [label="call"];
- n106 [label="call"];
- n107 [label="Trace"];
- n108 [label="callparams"];
- n108 [label="callparams"];
- n109 [label="PARAM"];
- n109 [label="PARAM"];
- n110 [label=""];
- n111 [label="\"Do Be on horse asd\""];
- n112 [label="if"];
- n112 [label="if"];
- n113 [label="=="];
- n113 [label="=="];
- n114 [label="akActionRef"];
- n115 [label="."];
- n115 [label="."];
- n116 [label="Game"];
- n117 [label="call"];
- n117 [label="call"];
- n118 [label="GetPlayer"];
- n119 [label="callparams"];
- n120 [label="BLOCK"];
- n120 [label="BLOCK"];
- n121 [label="."];
- n121 [label="."];
- n122 [label="Debug"];
- n123 [label="call"];
- n123 [label="call"];
- n124 [label="MessageBox"];
- n125 [label="callparams"];
- n125 [label="callparams"];
- n126 [label="PARAM"];
- n126 [label="PARAM"];
- n127 [label=""];
- n128 [label="\"Do Be on horse\""];
+ n9 [label="property"];
+ n9 [label="property"];
+ n10 [label="header"];
+ n10 [label="header"];
+ n11 [label="int"];
+ n12 [label="ReadOnlyValue"];
+ n13 [label="0"];
+ n14 [label="propfunc"];
+ n14 [label="propfunc"];
+ n15 [label="function"];
+ n15 [label="function"];
+ n16 [label="header"];
+ n16 [label="header"];
+ n17 [label="int"];
+ n18 [label="Get"];
+ n19 [label="0"];
+ n20 [label="BLOCK"];
+ n20 [label="BLOCK"];
+ n21 [label="return"];
+ n21 [label="return"];
+ n22 [label="myValue"];
+ n23 [label="event"];
+ n23 [label="event"];
+ n24 [label="header"];
+ n24 [label="header"];
+ n25 [label="NONE"];
+ n26 [label="OnLoad"];
+ n27 [label="0"];
+ n28 [label="BLOCK"];
+ n28 [label="BLOCK"];
+ n29 [label="."];
+ n29 [label="."];
+ n30 [label="Debug"];
+ n31 [label="call"];
+ n31 [label="call"];
+ n32 [label="Trace"];
+ n33 [label="callparams"];
+ n33 [label="callparams"];
+ n34 [label="PARAM"];
+ n34 [label="PARAM"];
+ n35 [label=""];
+ n36 [label="\"Horse do be fancy load\""];
+ n37 [label="event"];
+ n37 [label="event"];
+ n38 [label="header"];
+ n38 [label="header"];
+ n39 [label="NONE"];
+ n40 [label="OnInit"];
+ n41 [label="0"];
+ n42 [label="BLOCK"];
+ n42 [label="BLOCK"];
+ n43 [label="."];
+ n43 [label="."];
+ n44 [label="Debug"];
+ n45 [label="call"];
+ n45 [label="call"];
+ n46 [label="Trace"];
+ n47 [label="callparams"];
+ n47 [label="callparams"];
+ n48 [label="PARAM"];
+ n48 [label="PARAM"];
+ n49 [label=""];
+ n50 [label="\"Horse do be fancy init\""];
+ n51 [label="call"];
+ n51 [label="call"];
+ n52 [label="RegisterForKey"];
+ n53 [label="callparams"];
+ n53 [label="callparams"];
+ n54 [label="PARAM"];
+ n54 [label="PARAM"];
+ n55 [label=""];
+ n56 [label="203"];
+ n57 [label="event"];
+ n57 [label="event"];
+ n58 [label="header"];
+ n58 [label="header"];
+ n59 [label="NONE"];
+ n60 [label="OnKeyDown"];
+ n61 [label="0"];
+ n62 [label="parameter"];
+ n62 [label="parameter"];
+ n63 [label="Int"];
+ n64 [label="KeyCode"];
+ n65 [label="BLOCK"];
+ n65 [label="BLOCK"];
+ n66 [label="If"];
+ n66 [label="If"];
+ n67 [label="=="];
+ n67 [label="=="];
+ n68 [label="KeyCode"];
+ n69 [label="203"];
+ n70 [label="BLOCK"];
+ n70 [label="BLOCK"];
+ n71 [label="."];
+ n71 [label="."];
+ n72 [label="Debug"];
+ n73 [label="call"];
+ n73 [label="call"];
+ n74 [label="MessageBox"];
+ n75 [label="callparams"];
+ n75 [label="callparams"];
+ n76 [label="PARAM"];
+ n76 [label="PARAM"];
+ n77 [label=""];
+ n78 [label="\"sdf\""];
+ n79 [label="event"];
+ n79 [label="event"];
+ n80 [label="header"];
+ n80 [label="header"];
+ n81 [label="NONE"];
+ n82 [label="OnHit"];
+ n83 [label="0"];
+ n84 [label="parameter"];
+ n84 [label="parameter"];
+ n85 [label="ObjectReference"];
+ n86 [label="akAggressor"];
+ n87 [label="parameter"];
+ n87 [label="parameter"];
+ n88 [label="Form"];
+ n89 [label="akSource"];
+ n90 [label="parameter"];
+ n90 [label="parameter"];
+ n91 [label="Projectile"];
+ n92 [label="akProjectile"];
+ n93 [label="parameter"];
+ n93 [label="parameter"];
+ n94 [label="bool"];
+ n95 [label="abPowerAttack"];
+ n96 [label="parameter"];
+ n96 [label="parameter"];
+ n97 [label="bool"];
+ n98 [label="abSneakAttack"];
+ n99 [label="parameter"];
+ n99 [label="parameter"];
+ n100 [label="bool"];
+ n101 [label="abBashAttack"];
+ n102 [label="parameter"];
+ n102 [label="parameter"];
+ n103 [label="bool"];
+ n104 [label="abHitBlocked"];
+ n105 [label="BLOCK"];
+ n105 [label="BLOCK"];
+ n106 [label="."];
+ n106 [label="."];
+ n107 [label="Debug"];
+ n108 [label="call"];
+ n108 [label="call"];
+ n109 [label="MessageBox"];
+ n110 [label="callparams"];
+ n110 [label="callparams"];
+ n111 [label="PARAM"];
+ n111 [label="PARAM"];
+ n112 [label=""];
+ n113 [label="\"horsey sad\""];
+ n114 [label="event"];
+ n114 [label="event"];
+ n115 [label="header"];
+ n115 [label="header"];
+ n116 [label="NONE"];
+ n117 [label="OnActivate"];
+ n118 [label="0"];
+ n119 [label="parameter"];
+ n119 [label="parameter"];
+ n120 [label="ObjectReference"];
+ n121 [label="akActionRef"];
+ n122 [label="BLOCK"];
+ n122 [label="BLOCK"];
+ n123 [label="."];
+ n123 [label="."];
+ n124 [label="Debug"];
+ n125 [label="call"];
+ n125 [label="call"];
+ n126 [label="Trace"];
+ n127 [label="callparams"];
+ n127 [label="callparams"];
+ n128 [label="PARAM"];
+ n128 [label="PARAM"];
+ n129 [label=""];
+ n130 [label="\"Do Be on horse asd\""];
+ n131 [label="if"];
+ n131 [label="if"];
+ n132 [label="=="];
+ n132 [label="=="];
+ n133 [label="akActionRef"];
+ n134 [label="."];
+ n134 [label="."];
+ n135 [label="Game"];
+ n136 [label="call"];
+ n136 [label="call"];
+ n137 [label="GetPlayer"];
+ n138 [label="callparams"];
+ n139 [label="BLOCK"];
+ n139 [label="BLOCK"];
+ n140 [label="."];
+ n140 [label="."];
+ n141 [label="Debug"];
+ n142 [label="call"];
+ n142 [label="call"];
+ n143 [label="MessageBox"];
+ n144 [label="callparams"];
+ n144 [label="callparams"];
+ n145 [label="PARAM"];
+ n145 [label="PARAM"];
+ n146 [label=""];
+ n147 [label="\"Do Be on horse\""];
 
  n0 -> n1 // "object" -> "DoBeLikeHorseScript"
  n1 -> n2 // "DoBeLikeHorseScript" -> "0"
  n1 -> n3 // "DoBeLikeHorseScript" -> "ObjectReference"
- n0 -> n4 // "object" -> "event"
- n4 -> n5 // "event" -> "header"
- n5 -> n6 // "header" -> "NONE"
- n5 -> n7 // "header" -> "OnLoad"
- n5 -> n8 // "header" -> "0"
- n4 -> n9 // "event" -> "BLOCK"
- n9 -> n10 // "BLOCK" -> "."
- n10 -> n11 // "." -> "Debug"
- n10 -> n12 // "." -> "call"
- n12 -> n13 // "call" -> "Trace"
- n12 -> n14 // "call" -> "callparams"
- n14 -> n15 // "callparams" -> "PARAM"
- n15 -> n16 // "PARAM" -> ""
- n15 -> n17 // "PARAM" -> ""Horse do be fancy load""
- n0 -> n18 // "object" -> "event"
- n18 -> n19 // "event" -> "header"
- n19 -> n20 // "header" -> "NONE"
- n19 -> n21 // "header" -> "OnInit"
- n19 -> n22 // "header" -> "0"
- n18 -> n23 // "event" -> "BLOCK"
- n23 -> n24 // "BLOCK" -> "."
- n24 -> n25 // "." -> "Debug"
- n24 -> n26 // "." -> "call"
- n26 -> n27 // "call" -> "Trace"
- n26 -> n28 // "call" -> "callparams"
- n28 -> n29 // "callparams" -> "PARAM"
- n29 -> n30 // "PARAM" -> ""
- n29 -> n31 // "PARAM" -> ""Horse do be fancy init""
- n23 -> n32 // "BLOCK" -> "call"
- n32 -> n33 // "call" -> "RegisterForKey"
- n32 -> n34 // "call" -> "callparams"
- n34 -> n35 // "callparams" -> "PARAM"
- n35 -> n36 // "PARAM" -> ""
- n35 -> n37 // "PARAM" -> "203"
- n0 -> n38 // "object" -> "event"
- n38 -> n39 // "event" -> "header"
- n39 -> n40 // "header" -> "NONE"
- n39 -> n41 // "header" -> "OnKeyDown"
- n39 -> n42 // "header" -> "0"
- n39 -> n43 // "header" -> "parameter"
- n43 -> n44 // "parameter" -> "Int"
- n43 -> n45 // "parameter" -> "KeyCode"
- n38 -> n46 // "event" -> "BLOCK"
- n46 -> n47 // "BLOCK" -> "If"
- n47 -> n48 // "If" -> "=="
- n48 -> n49 // "==" -> "KeyCode"
- n48 -> n50 // "==" -> "203"
- n47 -> n51 // "If" -> "BLOCK"
- n51 -> n52 // "BLOCK" -> "."
- n52 -> n53 // "." -> "Debug"
- n52 -> n54 // "." -> "call"
- n54 -> n55 // "call" -> "MessageBox"
- n54 -> n56 // "call" -> "callparams"
- n56 -> n57 // "callparams" -> "PARAM"
- n57 -> n58 // "PARAM" -> ""
- n57 -> n59 // "PARAM" -> ""sdf""
- n0 -> n60 // "object" -> "event"
- n60 -> n61 // "event" -> "header"
- n61 -> n62 // "header" -> "NONE"
- n61 -> n63 // "header" -> "OnHit"
- n61 -> n64 // "header" -> "0"
- n61 -> n65 // "header" -> "parameter"
- n65 -> n66 // "parameter" -> "ObjectReference"
- n65 -> n67 // "parameter" -> "akAggressor"
- n61 -> n68 // "header" -> "parameter"
- n68 -> n69 // "parameter" -> "Form"
- n68 -> n70 // "parameter" -> "akSource"
- n61 -> n71 // "header" -> "parameter"
- n71 -> n72 // "parameter" -> "Projectile"
- n71 -> n73 // "parameter" -> "akProjectile"
- n61 -> n74 // "header" -> "parameter"
- n74 -> n75 // "parameter" -> "bool"
- n74 -> n76 // "parameter" -> "abPowerAttack"
- n61 -> n77 // "header" -> "parameter"
- n77 -> n78 // "parameter" -> "bool"
- n77 -> n79 // "parameter" -> "abSneakAttack"
- n61 -> n80 // "header" -> "parameter"
- n80 -> n81 // "parameter" -> "bool"
- n80 -> n82 // "parameter" -> "abBashAttack"
- n61 -> n83 // "header" -> "parameter"
- n83 -> n84 // "parameter" -> "bool"
- n83 -> n85 // "parameter" -> "abHitBlocked"
- n60 -> n86 // "event" -> "BLOCK"
- n86 -> n87 // "BLOCK" -> "."
- n87 -> n88 // "." -> "Debug"
- n87 -> n89 // "." -> "call"
- n89 -> n90 // "call" -> "MessageBox"
- n89 -> n91 // "call" -> "callparams"
- n91 -> n92 // "callparams" -> "PARAM"
- n92 -> n93 // "PARAM" -> ""
- n92 -> n94 // "PARAM" -> ""horsey sad""
- n0 -> n95 // "object" -> "event"
- n95 -> n96 // "event" -> "header"
- n96 -> n97 // "header" -> "NONE"
- n96 -> n98 // "header" -> "OnActivate"
- n96 -> n99 // "header" -> "0"
- n96 -> n100 // "header" -> "parameter"
- n100 -> n101 // "parameter" -> "ObjectReference"
- n100 -> n102 // "parameter" -> "akActionRef"
- n95 -> n103 // "event" -> "BLOCK"
- n103 -> n104 // "BLOCK" -> "."
- n104 -> n105 // "." -> "Debug"
- n104 -> n106 // "." -> "call"
- n106 -> n107 // "call" -> "Trace"
- n106 -> n108 // "call" -> "callparams"
- n108 -> n109 // "callparams" -> "PARAM"
- n109 -> n110 // "PARAM" -> ""
- n109 -> n111 // "PARAM" -> ""Do Be on horse asd""
- n103 -> n112 // "BLOCK" -> "if"
- n112 -> n113 // "if" -> "=="
- n113 -> n114 // "==" -> "akActionRef"
- n113 -> n115 // "==" -> "."
- n115 -> n116 // "." -> "Game"
- n115 -> n117 // "." -> "call"
- n117 -> n118 // "call" -> "GetPlayer"
- n117 -> n119 // "call" -> "callparams"
- n112 -> n120 // "if" -> "BLOCK"
- n120 -> n121 // "BLOCK" -> "."
- n121 -> n122 // "." -> "Debug"
- n121 -> n123 // "." -> "call"
- n123 -> n124 // "call" -> "MessageBox"
- n123 -> n125 // "call" -> "callparams"
- n125 -> n126 // "callparams" -> "PARAM"
- n126 -> n127 // "PARAM" -> ""
- n126 -> n128 // "PARAM" -> ""Do Be on horse""
+ n0 -> n4 // "object" -> "variable"
+ n4 -> n5 // "variable" -> "int"
+ n4 -> n6 // "variable" -> "myValue"
+ n4 -> n7 // "variable" -> "0"
+ n4 -> n8 // "variable" -> "0"
+ n0 -> n9 // "object" -> "property"
+ n9 -> n10 // "property" -> "header"
+ n10 -> n11 // "header" -> "int"
+ n10 -> n12 // "header" -> "ReadOnlyValue"
+ n10 -> n13 // "header" -> "0"
+ n9 -> n14 // "property" -> "propfunc"
+ n14 -> n15 // "propfunc" -> "function"
+ n15 -> n16 // "function" -> "header"
+ n16 -> n17 // "header" -> "int"
+ n16 -> n18 // "header" -> "Get"
+ n16 -> n19 // "header" -> "0"
+ n15 -> n20 // "function" -> "BLOCK"
+ n20 -> n21 // "BLOCK" -> "return"
+ n21 -> n22 // "return" -> "myValue"
+ n0 -> n23 // "object" -> "event"
+ n23 -> n24 // "event" -> "header"
+ n24 -> n25 // "header" -> "NONE"
+ n24 -> n26 // "header" -> "OnLoad"
+ n24 -> n27 // "header" -> "0"
+ n23 -> n28 // "event" -> "BLOCK"
+ n28 -> n29 // "BLOCK" -> "."
+ n29 -> n30 // "." -> "Debug"
+ n29 -> n31 // "." -> "call"
+ n31 -> n32 // "call" -> "Trace"
+ n31 -> n33 // "call" -> "callparams"
+ n33 -> n34 // "callparams" -> "PARAM"
+ n34 -> n35 // "PARAM" -> ""
+ n34 -> n36 // "PARAM" -> ""Horse do be fancy load""
+ n0 -> n37 // "object" -> "event"
+ n37 -> n38 // "event" -> "header"
+ n38 -> n39 // "header" -> "NONE"
+ n38 -> n40 // "header" -> "OnInit"
+ n38 -> n41 // "header" -> "0"
+ n37 -> n42 // "event" -> "BLOCK"
+ n42 -> n43 // "BLOCK" -> "."
+ n43 -> n44 // "." -> "Debug"
+ n43 -> n45 // "." -> "call"
+ n45 -> n46 // "call" -> "Trace"
+ n45 -> n47 // "call" -> "callparams"
+ n47 -> n48 // "callparams" -> "PARAM"
+ n48 -> n49 // "PARAM" -> ""
+ n48 -> n50 // "PARAM" -> ""Horse do be fancy init""
+ n42 -> n51 // "BLOCK" -> "call"
+ n51 -> n52 // "call" -> "RegisterForKey"
+ n51 -> n53 // "call" -> "callparams"
+ n53 -> n54 // "callparams" -> "PARAM"
+ n54 -> n55 // "PARAM" -> ""
+ n54 -> n56 // "PARAM" -> "203"
+ n0 -> n57 // "object" -> "event"
+ n57 -> n58 // "event" -> "header"
+ n58 -> n59 // "header" -> "NONE"
+ n58 -> n60 // "header" -> "OnKeyDown"
+ n58 -> n61 // "header" -> "0"
+ n58 -> n62 // "header" -> "parameter"
+ n62 -> n63 // "parameter" -> "Int"
+ n62 -> n64 // "parameter" -> "KeyCode"
+ n57 -> n65 // "event" -> "BLOCK"
+ n65 -> n66 // "BLOCK" -> "If"
+ n66 -> n67 // "If" -> "=="
+ n67 -> n68 // "==" -> "KeyCode"
+ n67 -> n69 // "==" -> "203"
+ n66 -> n70 // "If" -> "BLOCK"
+ n70 -> n71 // "BLOCK" -> "."
+ n71 -> n72 // "." -> "Debug"
+ n71 -> n73 // "." -> "call"
+ n73 -> n74 // "call" -> "MessageBox"
+ n73 -> n75 // "call" -> "callparams"
+ n75 -> n76 // "callparams" -> "PARAM"
+ n76 -> n77 // "PARAM" -> ""
+ n76 -> n78 // "PARAM" -> ""sdf""
+ n0 -> n79 // "object" -> "event"
+ n79 -> n80 // "event" -> "header"
+ n80 -> n81 // "header" -> "NONE"
+ n80 -> n82 // "header" -> "OnHit"
+ n80 -> n83 // "header" -> "0"
+ n80 -> n84 // "header" -> "parameter"
+ n84 -> n85 // "parameter" -> "ObjectReference"
+ n84 -> n86 // "parameter" -> "akAggressor"
+ n80 -> n87 // "header" -> "parameter"
+ n87 -> n88 // "parameter" -> "Form"
+ n87 -> n89 // "parameter" -> "akSource"
+ n80 -> n90 // "header" -> "parameter"
+ n90 -> n91 // "parameter" -> "Projectile"
+ n90 -> n92 // "parameter" -> "akProjectile"
+ n80 -> n93 // "header" -> "parameter"
+ n93 -> n94 // "parameter" -> "bool"
+ n93 -> n95 // "parameter" -> "abPowerAttack"
+ n80 -> n96 // "header" -> "parameter"
+ n96 -> n97 // "parameter" -> "bool"
+ n96 -> n98 // "parameter" -> "abSneakAttack"
+ n80 -> n99 // "header" -> "parameter"
+ n99 -> n100 // "parameter" -> "bool"
+ n99 -> n101 // "parameter" -> "abBashAttack"
+ n80 -> n102 // "header" -> "parameter"
+ n102 -> n103 // "parameter" -> "bool"
+ n102 -> n104 // "parameter" -> "abHitBlocked"
+ n79 -> n105 // "event" -> "BLOCK"
+ n105 -> n106 // "BLOCK" -> "."
+ n106 -> n107 // "." -> "Debug"
+ n106 -> n108 // "." -> "call"
+ n108 -> n109 // "call" -> "MessageBox"
+ n108 -> n110 // "call" -> "callparams"
+ n110 -> n111 // "callparams" -> "PARAM"
+ n111 -> n112 // "PARAM" -> ""
+ n111 -> n113 // "PARAM" -> ""horsey sad""
+ n0 -> n114 // "object" -> "event"
+ n114 -> n115 // "event" -> "header"
+ n115 -> n116 // "header" -> "NONE"
+ n115 -> n117 // "header" -> "OnActivate"
+ n115 -> n118 // "header" -> "0"
+ n115 -> n119 // "header" -> "parameter"
+ n119 -> n120 // "parameter" -> "ObjectReference"
+ n119 -> n121 // "parameter" -> "akActionRef"
+ n114 -> n122 // "event" -> "BLOCK"
+ n122 -> n123 // "BLOCK" -> "."
+ n123 -> n124 // "." -> "Debug"
+ n123 -> n125 // "." -> "call"
+ n125 -> n126 // "call" -> "Trace"
+ n125 -> n127 // "call" -> "callparams"
+ n127 -> n128 // "callparams" -> "PARAM"
+ n128 -> n129 // "PARAM" -> ""
+ n128 -> n130 // "PARAM" -> ""Do Be on horse asd""
+ n122 -> n131 // "BLOCK" -> "if"
+ n131 -> n132 // "if" -> "=="
+ n132 -> n133 // "==" -> "akActionRef"
+ n132 -> n134 // "==" -> "."
+ n134 -> n135 // "." -> "Game"
+ n134 -> n136 // "." -> "call"
+ n136 -> n137 // "call" -> "GetPlayer"
+ n136 -> n138 // "call" -> "callparams"
+ n131 -> n139 // "if" -> "BLOCK"
+ n139 -> n140 // "BLOCK" -> "."
+ n140 -> n141 // "." -> "Debug"
+ n140 -> n142 // "." -> "call"
+ n142 -> n143 // "call" -> "MessageBox"
+ n142 -> n144 // "call" -> "callparams"
+ n144 -> n145 // "callparams" -> "PARAM"
+ n145 -> n146 // "PARAM" -> ""
+ n145 -> n147 // "PARAM" -> ""Do Be on horse""
 
 }

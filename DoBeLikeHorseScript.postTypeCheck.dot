@@ -10,43 +10,41 @@ digraph {
  n1 [label="DoBeLikeHorseScript"];
  n2 [label="0"];
  n3 [label="ObjectReference"];
- n4 [label="event"];
- n4 [label="event"];
- n5 [label="header"];
- n5 [label="header"];
- n6 [label="NONE"];
- n7 [label="OnLoad"];
+ n4 [label="variable"];
+ n4 [label="variable"];
+ n5 [label="int"];
+ n6 [label="myValue"];
+ n7 [label="0"];
  n8 [label="0"];
- n9 [label="BLOCK"];
- n9 [label="BLOCK"];
- n10 [label="VAR"];
- n10 [label="VAR"];
- n11 [label="none"];
- n12 [label="::nonevar"];
- n13 [label="."];
- n13 [label="."];
- n14 [label="Debug"];
- n15 [label="callglobal"];
- n15 [label="callglobal"];
- n16 [label="debug"];
- n17 [label="Trace"];
- n18 [label="::nonevar"];
- n19 [label="CALLPARAMS"];
- n19 [label="CALLPARAMS"];
- n20 [label="PARAM"];
- n20 [label="PARAM"];
- n21 [label="\"Horse do be fancy load\""];
- n22 [label="\"Horse do be fancy load\""];
- n23 [label="PARAM"];
- n23 [label="PARAM"];
- n24 [label="0"];
- n24 [label="0"];
+ n9 [label="property"];
+ n9 [label="property"];
+ n10 [label="header"];
+ n10 [label="header"];
+ n11 [label="int"];
+ n12 [label="ReadOnlyValue"];
+ n13 [label="0"];
+ n14 [label="propfunc"];
+ n14 [label="propfunc"];
+ n15 [label="function"];
+ n15 [label="function"];
+ n16 [label="header"];
+ n16 [label="header"];
+ n17 [label="int"];
+ n18 [label="Get"];
+ n19 [label="0"];
+ n20 [label="BLOCK"];
+ n20 [label="BLOCK"];
+ n21 [label="return"];
+ n21 [label="return"];
+ n22 [label="myValue"];
+ n23 [label="myValue"];
+ n24 [label="propfunc"];
  n25 [label="event"];
  n25 [label="event"];
  n26 [label="header"];
  n26 [label="header"];
  n27 [label="NONE"];
- n28 [label="OnInit"];
+ n28 [label="OnLoad"];
  n29 [label="0"];
  n30 [label="BLOCK"];
  n30 [label="BLOCK"];
@@ -66,237 +64,267 @@ digraph {
  n40 [label="CALLPARAMS"];
  n41 [label="PARAM"];
  n41 [label="PARAM"];
- n42 [label="\"Horse do be fancy init\""];
- n43 [label="\"Horse do be fancy init\""];
+ n42 [label="\"Horse do be fancy load\""];
+ n43 [label="\"Horse do be fancy load\""];
  n44 [label="PARAM"];
  n44 [label="PARAM"];
  n45 [label="0"];
  n45 [label="0"];
- n46 [label="call"];
- n46 [label="call"];
- n47 [label="self"];
- n48 [label="RegisterForKey"];
- n49 [label="::nonevar"];
- n50 [label="CALLPARAMS"];
- n50 [label="CALLPARAMS"];
- n51 [label="PARAM"];
- n51 [label="PARAM"];
- n52 [label="203"];
- n53 [label="203"];
- n54 [label="event"];
- n54 [label="event"];
- n55 [label="header"];
- n55 [label="header"];
- n56 [label="NONE"];
- n57 [label="OnKeyDown"];
- n58 [label="0"];
- n59 [label="parameter"];
- n59 [label="parameter"];
- n60 [label="Int"];
- n61 [label="KeyCode"];
- n62 [label="BLOCK"];
- n62 [label="BLOCK"];
- n63 [label="VAR"];
- n63 [label="VAR"];
- n64 [label="bool"];
- n65 [label="::temp0"];
- n66 [label="If"];
- n66 [label="If"];
- n67 [label="=="];
- n67 [label="=="];
- n68 [label="::temp0"];
- n69 [label="KeyCode"];
- n70 [label="203"];
- n71 [label="KeyCode"];
- n72 [label="203"];
- n73 [label="BLOCK"];
- n73 [label="BLOCK"];
- n74 [label="VAR"];
- n74 [label="VAR"];
- n75 [label="none"];
- n76 [label="::nonevar"];
- n77 [label="."];
- n77 [label="."];
- n78 [label="Debug"];
- n79 [label="callglobal"];
- n79 [label="callglobal"];
- n80 [label="debug"];
- n81 [label="MessageBox"];
- n82 [label="::nonevar"];
- n83 [label="CALLPARAMS"];
- n83 [label="CALLPARAMS"];
- n84 [label="PARAM"];
- n84 [label="PARAM"];
- n85 [label="\"sdf\""];
- n86 [label="\"sdf\""];
- n87 [label="event"];
- n87 [label="event"];
- n88 [label="header"];
- n88 [label="header"];
- n89 [label="NONE"];
- n90 [label="OnHit"];
- n91 [label="0"];
- n92 [label="parameter"];
- n92 [label="parameter"];
- n93 [label="ObjectReference"];
- n94 [label="akAggressor"];
- n95 [label="parameter"];
- n95 [label="parameter"];
- n96 [label="Form"];
- n97 [label="akSource"];
- n98 [label="parameter"];
- n98 [label="parameter"];
- n99 [label="Projectile"];
- n100 [label="akProjectile"];
- n101 [label="parameter"];
- n101 [label="parameter"];
- n102 [label="bool"];
- n103 [label="abPowerAttack"];
- n104 [label="parameter"];
- n104 [label="parameter"];
- n105 [label="bool"];
- n106 [label="abSneakAttack"];
- n107 [label="parameter"];
- n107 [label="parameter"];
- n108 [label="bool"];
- n109 [label="abBashAttack"];
- n110 [label="parameter"];
- n110 [label="parameter"];
- n111 [label="bool"];
- n112 [label="abHitBlocked"];
- n113 [label="BLOCK"];
- n113 [label="BLOCK"];
- n114 [label="VAR"];
- n114 [label="VAR"];
- n115 [label="none"];
- n116 [label="::nonevar"];
- n117 [label="."];
- n117 [label="."];
- n118 [label="Debug"];
- n119 [label="callglobal"];
- n119 [label="callglobal"];
- n120 [label="debug"];
- n121 [label="MessageBox"];
- n122 [label="::nonevar"];
- n123 [label="CALLPARAMS"];
- n123 [label="CALLPARAMS"];
- n124 [label="PARAM"];
- n124 [label="PARAM"];
- n125 [label="\"horsey sad\""];
- n126 [label="\"horsey sad\""];
- n127 [label="event"];
- n127 [label="event"];
- n128 [label="header"];
- n128 [label="header"];
- n129 [label="NONE"];
- n130 [label="OnActivate"];
- n131 [label="0"];
- n132 [label="parameter"];
- n132 [label="parameter"];
- n133 [label="ObjectReference"];
- n134 [label="akActionRef"];
- n135 [label="BLOCK"];
- n135 [label="BLOCK"];
- n136 [label="VAR"];
- n136 [label="VAR"];
- n137 [label="none"];
- n138 [label="::nonevar"];
- n139 [label="VAR"];
- n139 [label="VAR"];
- n140 [label="actor"];
- n141 [label="::temp1"];
- n142 [label="VAR"];
- n142 [label="VAR"];
- n143 [label="objectreference"];
- n144 [label="::temp2"];
- n145 [label="VAR"];
- n145 [label="VAR"];
- n146 [label="bool"];
- n147 [label="::temp3"];
- n148 [label="."];
- n148 [label="."];
- n149 [label="Debug"];
- n150 [label="callglobal"];
- n150 [label="callglobal"];
- n151 [label="debug"];
- n152 [label="Trace"];
- n153 [label="::nonevar"];
- n154 [label="CALLPARAMS"];
- n154 [label="CALLPARAMS"];
- n155 [label="PARAM"];
- n155 [label="PARAM"];
- n156 [label="\"Do Be on horse asd\""];
- n157 [label="\"Do Be on horse asd\""];
- n158 [label="PARAM"];
- n158 [label="PARAM"];
- n159 [label="0"];
- n159 [label="0"];
- n160 [label="if"];
- n160 [label="if"];
- n161 [label="=="];
- n161 [label="=="];
- n162 [label="::temp3"];
- n163 [label="akActionRef"];
- n164 [label="AS"];
- n164 [label="AS"];
+ n46 [label="event"];
+ n46 [label="event"];
+ n47 [label="header"];
+ n47 [label="header"];
+ n48 [label="NONE"];
+ n49 [label="OnInit"];
+ n50 [label="0"];
+ n51 [label="BLOCK"];
+ n51 [label="BLOCK"];
+ n52 [label="VAR"];
+ n52 [label="VAR"];
+ n53 [label="none"];
+ n54 [label="::nonevar"];
+ n55 [label="."];
+ n55 [label="."];
+ n56 [label="Debug"];
+ n57 [label="callglobal"];
+ n57 [label="callglobal"];
+ n58 [label="debug"];
+ n59 [label="Trace"];
+ n60 [label="::nonevar"];
+ n61 [label="CALLPARAMS"];
+ n61 [label="CALLPARAMS"];
+ n62 [label="PARAM"];
+ n62 [label="PARAM"];
+ n63 [label="\"Horse do be fancy init\""];
+ n64 [label="\"Horse do be fancy init\""];
+ n65 [label="PARAM"];
+ n65 [label="PARAM"];
+ n66 [label="0"];
+ n66 [label="0"];
+ n67 [label="call"];
+ n67 [label="call"];
+ n68 [label="self"];
+ n69 [label="RegisterForKey"];
+ n70 [label="::nonevar"];
+ n71 [label="CALLPARAMS"];
+ n71 [label="CALLPARAMS"];
+ n72 [label="PARAM"];
+ n72 [label="PARAM"];
+ n73 [label="203"];
+ n74 [label="203"];
+ n75 [label="event"];
+ n75 [label="event"];
+ n76 [label="header"];
+ n76 [label="header"];
+ n77 [label="NONE"];
+ n78 [label="OnKeyDown"];
+ n79 [label="0"];
+ n80 [label="parameter"];
+ n80 [label="parameter"];
+ n81 [label="Int"];
+ n82 [label="KeyCode"];
+ n83 [label="BLOCK"];
+ n83 [label="BLOCK"];
+ n84 [label="VAR"];
+ n84 [label="VAR"];
+ n85 [label="bool"];
+ n86 [label="::temp0"];
+ n87 [label="If"];
+ n87 [label="If"];
+ n88 [label="=="];
+ n88 [label="=="];
+ n89 [label="::temp0"];
+ n90 [label="KeyCode"];
+ n91 [label="203"];
+ n92 [label="KeyCode"];
+ n93 [label="203"];
+ n94 [label="BLOCK"];
+ n94 [label="BLOCK"];
+ n95 [label="VAR"];
+ n95 [label="VAR"];
+ n96 [label="none"];
+ n97 [label="::nonevar"];
+ n98 [label="."];
+ n98 [label="."];
+ n99 [label="Debug"];
+ n100 [label="callglobal"];
+ n100 [label="callglobal"];
+ n101 [label="debug"];
+ n102 [label="MessageBox"];
+ n103 [label="::nonevar"];
+ n104 [label="CALLPARAMS"];
+ n104 [label="CALLPARAMS"];
+ n105 [label="PARAM"];
+ n105 [label="PARAM"];
+ n106 [label="\"sdf\""];
+ n107 [label="\"sdf\""];
+ n108 [label="event"];
+ n108 [label="event"];
+ n109 [label="header"];
+ n109 [label="header"];
+ n110 [label="NONE"];
+ n111 [label="OnHit"];
+ n112 [label="0"];
+ n113 [label="parameter"];
+ n113 [label="parameter"];
+ n114 [label="ObjectReference"];
+ n115 [label="akAggressor"];
+ n116 [label="parameter"];
+ n116 [label="parameter"];
+ n117 [label="Form"];
+ n118 [label="akSource"];
+ n119 [label="parameter"];
+ n119 [label="parameter"];
+ n120 [label="Projectile"];
+ n121 [label="akProjectile"];
+ n122 [label="parameter"];
+ n122 [label="parameter"];
+ n123 [label="bool"];
+ n124 [label="abPowerAttack"];
+ n125 [label="parameter"];
+ n125 [label="parameter"];
+ n126 [label="bool"];
+ n127 [label="abSneakAttack"];
+ n128 [label="parameter"];
+ n128 [label="parameter"];
+ n129 [label="bool"];
+ n130 [label="abBashAttack"];
+ n131 [label="parameter"];
+ n131 [label="parameter"];
+ n132 [label="bool"];
+ n133 [label="abHitBlocked"];
+ n134 [label="BLOCK"];
+ n134 [label="BLOCK"];
+ n135 [label="VAR"];
+ n135 [label="VAR"];
+ n136 [label="none"];
+ n137 [label="::nonevar"];
+ n138 [label="."];
+ n138 [label="."];
+ n139 [label="Debug"];
+ n140 [label="callglobal"];
+ n140 [label="callglobal"];
+ n141 [label="debug"];
+ n142 [label="MessageBox"];
+ n143 [label="::nonevar"];
+ n144 [label="CALLPARAMS"];
+ n144 [label="CALLPARAMS"];
+ n145 [label="PARAM"];
+ n145 [label="PARAM"];
+ n146 [label="\"horsey sad\""];
+ n147 [label="\"horsey sad\""];
+ n148 [label="event"];
+ n148 [label="event"];
+ n149 [label="header"];
+ n149 [label="header"];
+ n150 [label="NONE"];
+ n151 [label="OnActivate"];
+ n152 [label="0"];
+ n153 [label="parameter"];
+ n153 [label="parameter"];
+ n154 [label="ObjectReference"];
+ n155 [label="akActionRef"];
+ n156 [label="BLOCK"];
+ n156 [label="BLOCK"];
+ n157 [label="VAR"];
+ n157 [label="VAR"];
+ n158 [label="none"];
+ n159 [label="::nonevar"];
+ n160 [label="VAR"];
+ n160 [label="VAR"];
+ n161 [label="actor"];
+ n162 [label="::temp1"];
+ n163 [label="VAR"];
+ n163 [label="VAR"];
+ n164 [label="objectreference"];
  n165 [label="::temp2"];
- n166 [label="::temp1"];
- n167 [label="akActionRef"];
- n168 [label="."];
- n168 [label="."];
- n169 [label="Game"];
- n170 [label="callglobal"];
- n170 [label="callglobal"];
- n171 [label="game"];
- n172 [label="GetPlayer"];
- n173 [label="::temp1"];
- n174 [label="CALLPARAMS"];
- n175 [label="BLOCK"];
- n175 [label="BLOCK"];
- n176 [label="."];
- n176 [label="."];
- n177 [label="Debug"];
- n178 [label="callglobal"];
- n178 [label="callglobal"];
- n179 [label="debug"];
- n180 [label="MessageBox"];
- n181 [label="::nonevar"];
- n182 [label="CALLPARAMS"];
- n182 [label="CALLPARAMS"];
- n183 [label="PARAM"];
- n183 [label="PARAM"];
- n184 [label="\"Do Be on horse\""];
- n185 [label="\"Do Be on horse\""];
+ n166 [label="VAR"];
+ n166 [label="VAR"];
+ n167 [label="bool"];
+ n168 [label="::temp3"];
+ n169 [label="."];
+ n169 [label="."];
+ n170 [label="Debug"];
+ n171 [label="callglobal"];
+ n171 [label="callglobal"];
+ n172 [label="debug"];
+ n173 [label="Trace"];
+ n174 [label="::nonevar"];
+ n175 [label="CALLPARAMS"];
+ n175 [label="CALLPARAMS"];
+ n176 [label="PARAM"];
+ n176 [label="PARAM"];
+ n177 [label="\"Do Be on horse asd\""];
+ n178 [label="\"Do Be on horse asd\""];
+ n179 [label="PARAM"];
+ n179 [label="PARAM"];
+ n180 [label="0"];
+ n180 [label="0"];
+ n181 [label="if"];
+ n181 [label="if"];
+ n182 [label="=="];
+ n182 [label="=="];
+ n183 [label="::temp3"];
+ n184 [label="akActionRef"];
+ n185 [label="AS"];
+ n185 [label="AS"];
+ n186 [label="::temp2"];
+ n187 [label="::temp1"];
+ n188 [label="akActionRef"];
+ n189 [label="."];
+ n189 [label="."];
+ n190 [label="Game"];
+ n191 [label="callglobal"];
+ n191 [label="callglobal"];
+ n192 [label="game"];
+ n193 [label="GetPlayer"];
+ n194 [label="::temp1"];
+ n195 [label="CALLPARAMS"];
+ n196 [label="BLOCK"];
+ n196 [label="BLOCK"];
+ n197 [label="."];
+ n197 [label="."];
+ n198 [label="Debug"];
+ n199 [label="callglobal"];
+ n199 [label="callglobal"];
+ n200 [label="debug"];
+ n201 [label="MessageBox"];
+ n202 [label="::nonevar"];
+ n203 [label="CALLPARAMS"];
+ n203 [label="CALLPARAMS"];
+ n204 [label="PARAM"];
+ n204 [label="PARAM"];
+ n205 [label="\"Do Be on horse\""];
+ n206 [label="\"Do Be on horse\""];
 
  n0 -> n1 // "object" -> "DoBeLikeHorseScript"
  n1 -> n2 // "DoBeLikeHorseScript" -> "0"
  n1 -> n3 // "DoBeLikeHorseScript" -> "ObjectReference"
- n0 -> n4 // "object" -> "event"
- n4 -> n5 // "event" -> "header"
- n5 -> n6 // "header" -> "NONE"
- n5 -> n7 // "header" -> "OnLoad"
- n5 -> n8 // "header" -> "0"
- n4 -> n9 // "event" -> "BLOCK"
- n9 -> n10 // "BLOCK" -> "VAR"
- n10 -> n11 // "VAR" -> "none"
- n10 -> n12 // "VAR" -> "::nonevar"
- n9 -> n13 // "BLOCK" -> "."
- n13 -> n14 // "." -> "Debug"
- n13 -> n15 // "." -> "callglobal"
- n15 -> n16 // "callglobal" -> "debug"
- n15 -> n17 // "callglobal" -> "Trace"
- n15 -> n18 // "callglobal" -> "::nonevar"
- n15 -> n19 // "callglobal" -> "CALLPARAMS"
- n19 -> n20 // "CALLPARAMS" -> "PARAM"
- n20 -> n21 // "PARAM" -> ""Horse do be fancy load""
- n20 -> n22 // "PARAM" -> ""Horse do be fancy load""
- n19 -> n23 // "CALLPARAMS" -> "PARAM"
- n23 -> n24 // "PARAM" -> "0"
- n23 -> n24 // "PARAM" -> "0"
+ n0 -> n4 // "object" -> "variable"
+ n4 -> n5 // "variable" -> "int"
+ n4 -> n6 // "variable" -> "myValue"
+ n4 -> n7 // "variable" -> "0"
+ n4 -> n8 // "variable" -> "0"
+ n0 -> n9 // "object" -> "property"
+ n9 -> n10 // "property" -> "header"
+ n10 -> n11 // "header" -> "int"
+ n10 -> n12 // "header" -> "ReadOnlyValue"
+ n10 -> n13 // "header" -> "0"
+ n9 -> n14 // "property" -> "propfunc"
+ n14 -> n15 // "propfunc" -> "function"
+ n15 -> n16 // "function" -> "header"
+ n16 -> n17 // "header" -> "int"
+ n16 -> n18 // "header" -> "Get"
+ n16 -> n19 // "header" -> "0"
+ n15 -> n20 // "function" -> "BLOCK"
+ n20 -> n21 // "BLOCK" -> "return"
+ n21 -> n22 // "return" -> "myValue"
+ n21 -> n23 // "return" -> "myValue"
+ n9 -> n24 // "property" -> "propfunc"
  n0 -> n25 // "object" -> "event"
  n25 -> n26 // "event" -> "header"
  n26 -> n27 // "header" -> "NONE"
- n26 -> n28 // "header" -> "OnInit"
+ n26 -> n28 // "header" -> "OnLoad"
  n26 -> n29 // "header" -> "0"
  n25 -> n30 // "event" -> "BLOCK"
  n30 -> n31 // "BLOCK" -> "VAR"
@@ -310,151 +338,173 @@ digraph {
  n36 -> n39 // "callglobal" -> "::nonevar"
  n36 -> n40 // "callglobal" -> "CALLPARAMS"
  n40 -> n41 // "CALLPARAMS" -> "PARAM"
- n41 -> n42 // "PARAM" -> ""Horse do be fancy init""
- n41 -> n43 // "PARAM" -> ""Horse do be fancy init""
+ n41 -> n42 // "PARAM" -> ""Horse do be fancy load""
+ n41 -> n43 // "PARAM" -> ""Horse do be fancy load""
  n40 -> n44 // "CALLPARAMS" -> "PARAM"
  n44 -> n45 // "PARAM" -> "0"
  n44 -> n45 // "PARAM" -> "0"
- n30 -> n46 // "BLOCK" -> "call"
- n46 -> n47 // "call" -> "self"
- n46 -> n48 // "call" -> "RegisterForKey"
- n46 -> n49 // "call" -> "::nonevar"
- n46 -> n50 // "call" -> "CALLPARAMS"
- n50 -> n51 // "CALLPARAMS" -> "PARAM"
- n51 -> n52 // "PARAM" -> "203"
- n51 -> n53 // "PARAM" -> "203"
- n0 -> n54 // "object" -> "event"
- n54 -> n55 // "event" -> "header"
- n55 -> n56 // "header" -> "NONE"
- n55 -> n57 // "header" -> "OnKeyDown"
- n55 -> n58 // "header" -> "0"
- n55 -> n59 // "header" -> "parameter"
- n59 -> n60 // "parameter" -> "Int"
- n59 -> n61 // "parameter" -> "KeyCode"
- n54 -> n62 // "event" -> "BLOCK"
- n62 -> n63 // "BLOCK" -> "VAR"
- n63 -> n64 // "VAR" -> "bool"
- n63 -> n65 // "VAR" -> "::temp0"
- n62 -> n66 // "BLOCK" -> "If"
- n66 -> n67 // "If" -> "=="
- n67 -> n68 // "==" -> "::temp0"
- n67 -> n69 // "==" -> "KeyCode"
- n67 -> n70 // "==" -> "203"
- n67 -> n71 // "==" -> "KeyCode"
- n67 -> n72 // "==" -> "203"
- n66 -> n73 // "If" -> "BLOCK"
- n73 -> n74 // "BLOCK" -> "VAR"
- n74 -> n75 // "VAR" -> "none"
- n74 -> n76 // "VAR" -> "::nonevar"
- n73 -> n77 // "BLOCK" -> "."
- n77 -> n78 // "." -> "Debug"
- n77 -> n79 // "." -> "callglobal"
- n79 -> n80 // "callglobal" -> "debug"
- n79 -> n81 // "callglobal" -> "MessageBox"
- n79 -> n82 // "callglobal" -> "::nonevar"
- n79 -> n83 // "callglobal" -> "CALLPARAMS"
- n83 -> n84 // "CALLPARAMS" -> "PARAM"
- n84 -> n85 // "PARAM" -> ""sdf""
- n84 -> n86 // "PARAM" -> ""sdf""
- n0 -> n87 // "object" -> "event"
- n87 -> n88 // "event" -> "header"
- n88 -> n89 // "header" -> "NONE"
- n88 -> n90 // "header" -> "OnHit"
- n88 -> n91 // "header" -> "0"
- n88 -> n92 // "header" -> "parameter"
- n92 -> n93 // "parameter" -> "ObjectReference"
- n92 -> n94 // "parameter" -> "akAggressor"
- n88 -> n95 // "header" -> "parameter"
- n95 -> n96 // "parameter" -> "Form"
- n95 -> n97 // "parameter" -> "akSource"
- n88 -> n98 // "header" -> "parameter"
- n98 -> n99 // "parameter" -> "Projectile"
- n98 -> n100 // "parameter" -> "akProjectile"
- n88 -> n101 // "header" -> "parameter"
- n101 -> n102 // "parameter" -> "bool"
- n101 -> n103 // "parameter" -> "abPowerAttack"
- n88 -> n104 // "header" -> "parameter"
- n104 -> n105 // "parameter" -> "bool"
- n104 -> n106 // "parameter" -> "abSneakAttack"
- n88 -> n107 // "header" -> "parameter"
- n107 -> n108 // "parameter" -> "bool"
- n107 -> n109 // "parameter" -> "abBashAttack"
- n88 -> n110 // "header" -> "parameter"
- n110 -> n111 // "parameter" -> "bool"
- n110 -> n112 // "parameter" -> "abHitBlocked"
- n87 -> n113 // "event" -> "BLOCK"
- n113 -> n114 // "BLOCK" -> "VAR"
- n114 -> n115 // "VAR" -> "none"
- n114 -> n116 // "VAR" -> "::nonevar"
- n113 -> n117 // "BLOCK" -> "."
- n117 -> n118 // "." -> "Debug"
- n117 -> n119 // "." -> "callglobal"
- n119 -> n120 // "callglobal" -> "debug"
- n119 -> n121 // "callglobal" -> "MessageBox"
- n119 -> n122 // "callglobal" -> "::nonevar"
- n119 -> n123 // "callglobal" -> "CALLPARAMS"
- n123 -> n124 // "CALLPARAMS" -> "PARAM"
- n124 -> n125 // "PARAM" -> ""horsey sad""
- n124 -> n126 // "PARAM" -> ""horsey sad""
- n0 -> n127 // "object" -> "event"
- n127 -> n128 // "event" -> "header"
- n128 -> n129 // "header" -> "NONE"
- n128 -> n130 // "header" -> "OnActivate"
- n128 -> n131 // "header" -> "0"
- n128 -> n132 // "header" -> "parameter"
- n132 -> n133 // "parameter" -> "ObjectReference"
- n132 -> n134 // "parameter" -> "akActionRef"
- n127 -> n135 // "event" -> "BLOCK"
- n135 -> n136 // "BLOCK" -> "VAR"
- n136 -> n137 // "VAR" -> "none"
- n136 -> n138 // "VAR" -> "::nonevar"
- n135 -> n139 // "BLOCK" -> "VAR"
- n139 -> n140 // "VAR" -> "actor"
- n139 -> n141 // "VAR" -> "::temp1"
- n135 -> n142 // "BLOCK" -> "VAR"
- n142 -> n143 // "VAR" -> "objectreference"
- n142 -> n144 // "VAR" -> "::temp2"
- n135 -> n145 // "BLOCK" -> "VAR"
- n145 -> n146 // "VAR" -> "bool"
- n145 -> n147 // "VAR" -> "::temp3"
- n135 -> n148 // "BLOCK" -> "."
- n148 -> n149 // "." -> "Debug"
- n148 -> n150 // "." -> "callglobal"
- n150 -> n151 // "callglobal" -> "debug"
- n150 -> n152 // "callglobal" -> "Trace"
- n150 -> n153 // "callglobal" -> "::nonevar"
- n150 -> n154 // "callglobal" -> "CALLPARAMS"
- n154 -> n155 // "CALLPARAMS" -> "PARAM"
- n155 -> n156 // "PARAM" -> ""Do Be on horse asd""
- n155 -> n157 // "PARAM" -> ""Do Be on horse asd""
- n154 -> n158 // "CALLPARAMS" -> "PARAM"
- n158 -> n159 // "PARAM" -> "0"
- n158 -> n159 // "PARAM" -> "0"
- n135 -> n160 // "BLOCK" -> "if"
- n160 -> n161 // "if" -> "=="
- n161 -> n162 // "==" -> "::temp3"
- n161 -> n163 // "==" -> "akActionRef"
- n161 -> n164 // "==" -> "AS"
- n164 -> n165 // "AS" -> "::temp2"
- n164 -> n166 // "AS" -> "::temp1"
- n161 -> n167 // "==" -> "akActionRef"
- n161 -> n168 // "==" -> "."
- n168 -> n169 // "." -> "Game"
- n168 -> n170 // "." -> "callglobal"
- n170 -> n171 // "callglobal" -> "game"
- n170 -> n172 // "callglobal" -> "GetPlayer"
- n170 -> n173 // "callglobal" -> "::temp1"
- n170 -> n174 // "callglobal" -> "CALLPARAMS"
- n160 -> n175 // "if" -> "BLOCK"
- n175 -> n176 // "BLOCK" -> "."
- n176 -> n177 // "." -> "Debug"
- n176 -> n178 // "." -> "callglobal"
- n178 -> n179 // "callglobal" -> "debug"
- n178 -> n180 // "callglobal" -> "MessageBox"
- n178 -> n181 // "callglobal" -> "::nonevar"
- n178 -> n182 // "callglobal" -> "CALLPARAMS"
- n182 -> n183 // "CALLPARAMS" -> "PARAM"
- n183 -> n184 // "PARAM" -> ""Do Be on horse""
- n183 -> n185 // "PARAM" -> ""Do Be on horse""
+ n0 -> n46 // "object" -> "event"
+ n46 -> n47 // "event" -> "header"
+ n47 -> n48 // "header" -> "NONE"
+ n47 -> n49 // "header" -> "OnInit"
+ n47 -> n50 // "header" -> "0"
+ n46 -> n51 // "event" -> "BLOCK"
+ n51 -> n52 // "BLOCK" -> "VAR"
+ n52 -> n53 // "VAR" -> "none"
+ n52 -> n54 // "VAR" -> "::nonevar"
+ n51 -> n55 // "BLOCK" -> "."
+ n55 -> n56 // "." -> "Debug"
+ n55 -> n57 // "." -> "callglobal"
+ n57 -> n58 // "callglobal" -> "debug"
+ n57 -> n59 // "callglobal" -> "Trace"
+ n57 -> n60 // "callglobal" -> "::nonevar"
+ n57 -> n61 // "callglobal" -> "CALLPARAMS"
+ n61 -> n62 // "CALLPARAMS" -> "PARAM"
+ n62 -> n63 // "PARAM" -> ""Horse do be fancy init""
+ n62 -> n64 // "PARAM" -> ""Horse do be fancy init""
+ n61 -> n65 // "CALLPARAMS" -> "PARAM"
+ n65 -> n66 // "PARAM" -> "0"
+ n65 -> n66 // "PARAM" -> "0"
+ n51 -> n67 // "BLOCK" -> "call"
+ n67 -> n68 // "call" -> "self"
+ n67 -> n69 // "call" -> "RegisterForKey"
+ n67 -> n70 // "call" -> "::nonevar"
+ n67 -> n71 // "call" -> "CALLPARAMS"
+ n71 -> n72 // "CALLPARAMS" -> "PARAM"
+ n72 -> n73 // "PARAM" -> "203"
+ n72 -> n74 // "PARAM" -> "203"
+ n0 -> n75 // "object" -> "event"
+ n75 -> n76 // "event" -> "header"
+ n76 -> n77 // "header" -> "NONE"
+ n76 -> n78 // "header" -> "OnKeyDown"
+ n76 -> n79 // "header" -> "0"
+ n76 -> n80 // "header" -> "parameter"
+ n80 -> n81 // "parameter" -> "Int"
+ n80 -> n82 // "parameter" -> "KeyCode"
+ n75 -> n83 // "event" -> "BLOCK"
+ n83 -> n84 // "BLOCK" -> "VAR"
+ n84 -> n85 // "VAR" -> "bool"
+ n84 -> n86 // "VAR" -> "::temp0"
+ n83 -> n87 // "BLOCK" -> "If"
+ n87 -> n88 // "If" -> "=="
+ n88 -> n89 // "==" -> "::temp0"
+ n88 -> n90 // "==" -> "KeyCode"
+ n88 -> n91 // "==" -> "203"
+ n88 -> n92 // "==" -> "KeyCode"
+ n88 -> n93 // "==" -> "203"
+ n87 -> n94 // "If" -> "BLOCK"
+ n94 -> n95 // "BLOCK" -> "VAR"
+ n95 -> n96 // "VAR" -> "none"
+ n95 -> n97 // "VAR" -> "::nonevar"
+ n94 -> n98 // "BLOCK" -> "."
+ n98 -> n99 // "." -> "Debug"
+ n98 -> n100 // "." -> "callglobal"
+ n100 -> n101 // "callglobal" -> "debug"
+ n100 -> n102 // "callglobal" -> "MessageBox"
+ n100 -> n103 // "callglobal" -> "::nonevar"
+ n100 -> n104 // "callglobal" -> "CALLPARAMS"
+ n104 -> n105 // "CALLPARAMS" -> "PARAM"
+ n105 -> n106 // "PARAM" -> ""sdf""
+ n105 -> n107 // "PARAM" -> ""sdf""
+ n0 -> n108 // "object" -> "event"
+ n108 -> n109 // "event" -> "header"
+ n109 -> n110 // "header" -> "NONE"
+ n109 -> n111 // "header" -> "OnHit"
+ n109 -> n112 // "header" -> "0"
+ n109 -> n113 // "header" -> "parameter"
+ n113 -> n114 // "parameter" -> "ObjectReference"
+ n113 -> n115 // "parameter" -> "akAggressor"
+ n109 -> n116 // "header" -> "parameter"
+ n116 -> n117 // "parameter" -> "Form"
+ n116 -> n118 // "parameter" -> "akSource"
+ n109 -> n119 // "header" -> "parameter"
+ n119 -> n120 // "parameter" -> "Projectile"
+ n119 -> n121 // "parameter" -> "akProjectile"
+ n109 -> n122 // "header" -> "parameter"
+ n122 -> n123 // "parameter" -> "bool"
+ n122 -> n124 // "parameter" -> "abPowerAttack"
+ n109 -> n125 // "header" -> "parameter"
+ n125 -> n126 // "parameter" -> "bool"
+ n125 -> n127 // "parameter" -> "abSneakAttack"
+ n109 -> n128 // "header" -> "parameter"
+ n128 -> n129 // "parameter" -> "bool"
+ n128 -> n130 // "parameter" -> "abBashAttack"
+ n109 -> n131 // "header" -> "parameter"
+ n131 -> n132 // "parameter" -> "bool"
+ n131 -> n133 // "parameter" -> "abHitBlocked"
+ n108 -> n134 // "event" -> "BLOCK"
+ n134 -> n135 // "BLOCK" -> "VAR"
+ n135 -> n136 // "VAR" -> "none"
+ n135 -> n137 // "VAR" -> "::nonevar"
+ n134 -> n138 // "BLOCK" -> "."
+ n138 -> n139 // "." -> "Debug"
+ n138 -> n140 // "." -> "callglobal"
+ n140 -> n141 // "callglobal" -> "debug"
+ n140 -> n142 // "callglobal" -> "MessageBox"
+ n140 -> n143 // "callglobal" -> "::nonevar"
+ n140 -> n144 // "callglobal" -> "CALLPARAMS"
+ n144 -> n145 // "CALLPARAMS" -> "PARAM"
+ n145 -> n146 // "PARAM" -> ""horsey sad""
+ n145 -> n147 // "PARAM" -> ""horsey sad""
+ n0 -> n148 // "object" -> "event"
+ n148 -> n149 // "event" -> "header"
+ n149 -> n150 // "header" -> "NONE"
+ n149 -> n151 // "header" -> "OnActivate"
+ n149 -> n152 // "header" -> "0"
+ n149 -> n153 // "header" -> "parameter"
+ n153 -> n154 // "parameter" -> "ObjectReference"
+ n153 -> n155 // "parameter" -> "akActionRef"
+ n148 -> n156 // "event" -> "BLOCK"
+ n156 -> n157 // "BLOCK" -> "VAR"
+ n157 -> n158 // "VAR" -> "none"
+ n157 -> n159 // "VAR" -> "::nonevar"
+ n156 -> n160 // "BLOCK" -> "VAR"
+ n160 -> n161 // "VAR" -> "actor"
+ n160 -> n162 // "VAR" -> "::temp1"
+ n156 -> n163 // "BLOCK" -> "VAR"
+ n163 -> n164 // "VAR" -> "objectreference"
+ n163 -> n165 // "VAR" -> "::temp2"
+ n156 -> n166 // "BLOCK" -> "VAR"
+ n166 -> n167 // "VAR" -> "bool"
+ n166 -> n168 // "VAR" -> "::temp3"
+ n156 -> n169 // "BLOCK" -> "."
+ n169 -> n170 // "." -> "Debug"
+ n169 -> n171 // "." -> "callglobal"
+ n171 -> n172 // "callglobal" -> "debug"
+ n171 -> n173 // "callglobal" -> "Trace"
+ n171 -> n174 // "callglobal" -> "::nonevar"
+ n171 -> n175 // "callglobal" -> "CALLPARAMS"
+ n175 -> n176 // "CALLPARAMS" -> "PARAM"
+ n176 -> n177 // "PARAM" -> ""Do Be on horse asd""
+ n176 -> n178 // "PARAM" -> ""Do Be on horse asd""
+ n175 -> n179 // "CALLPARAMS" -> "PARAM"
+ n179 -> n180 // "PARAM" -> "0"
+ n179 -> n180 // "PARAM" -> "0"
+ n156 -> n181 // "BLOCK" -> "if"
+ n181 -> n182 // "if" -> "=="
+ n182 -> n183 // "==" -> "::temp3"
+ n182 -> n184 // "==" -> "akActionRef"
+ n182 -> n185 // "==" -> "AS"
+ n185 -> n186 // "AS" -> "::temp2"
+ n185 -> n187 // "AS" -> "::temp1"
+ n182 -> n188 // "==" -> "akActionRef"
+ n182 -> n189 // "==" -> "."
+ n189 -> n190 // "." -> "Game"
+ n189 -> n191 // "." -> "callglobal"
+ n191 -> n192 // "callglobal" -> "game"
+ n191 -> n193 // "callglobal" -> "GetPlayer"
+ n191 -> n194 // "callglobal" -> "::temp1"
+ n191 -> n195 // "callglobal" -> "CALLPARAMS"
+ n181 -> n196 // "if" -> "BLOCK"
+ n196 -> n197 // "BLOCK" -> "."
+ n197 -> n198 // "." -> "Debug"
+ n197 -> n199 // "." -> "callglobal"
+ n199 -> n200 // "callglobal" -> "debug"
+ n199 -> n201 // "callglobal" -> "MessageBox"
+ n199 -> n202 // "callglobal" -> "::nonevar"
+ n199 -> n203 // "callglobal" -> "CALLPARAMS"
+ n203 -> n204 // "CALLPARAMS" -> "PARAM"
+ n204 -> n205 // "PARAM" -> ""Do Be on horse""
+ n204 -> n206 // "PARAM" -> ""Do Be on horse""
 
 }
