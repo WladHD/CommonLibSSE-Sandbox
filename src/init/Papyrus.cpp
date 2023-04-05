@@ -33,6 +33,7 @@ std::string DBLSandboxMyNativeFunction(RE::StaticFunctionTag*)
     logger::info("Placing horse");
     RE::FormID	horsey = 0x109E3D;
     RE::TESNPC* form   = RE::TESForm::LookupByID<RE::TESNPC>(horsey);
+    //RE::TESNPC	formHorsey = *form;
     logger::info("Placing horse '{}'", form == nullptr);
     if (form == nullptr) {
 	return "";

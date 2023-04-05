@@ -19,7 +19,7 @@
             },
             version = "3.26.2"
         },
-        ["commonlibsse-ng#6cab6700"] = {
+        ["commonlibsse-ng#ef1b0ad7"] = {
             repo = {
                 branch = "master",
                 commit = "de1e074d91c234091cc2eac6c409f1c8d158ea57",

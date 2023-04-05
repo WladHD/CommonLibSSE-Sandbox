@@ -1,7 +1,7 @@
 .info
   .source "DoBeLikeHorseScript.psc"
   .modifyTime 1680645287
-  .compileTime 1680647055
+  .compileTime 1680715578
   .user "Arbeitsplatz"
   .computer "DESKTOP-FB32QHR"
 .endInfo

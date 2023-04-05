@@ -25,7 +25,7 @@ add_rules("plugin.vsxmake.autoupdate")
 set_policy("build.ccache", false)
 set_policy("package.requires_lock", true)
 
-add_repositories("simpleini https://github.com/brofield/simpleini.git")
+-- add_repositories("simpleini https://github.com/brofield/simpleini.git")
 
 -- require packages
 add_requires("fmt")
@@ -37,7 +37,10 @@ add_requires("spdlog", {
 })
 add_requires("commonlibsse-ng", {
     configs = {
-        skyrim_vr = false
+        skyrim_vr = false,
+        skyrim_ae = true,
+        skyrim_se = true,
+        skse_xbyak = false
     }
 })
 add_requires("vcpkg::simpleini")
